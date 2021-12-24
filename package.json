@@ -1,5 +1,6 @@
 {
   "name": "watchit-client",
+  "browserslist": "> 0.25%, not dead",
   "version": "1.0.0",
   "description": "",
   "scripts": {
