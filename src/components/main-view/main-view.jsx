@@ -1,9 +1,11 @@
 import React from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 
 import { LoginView } from '../login-view/login-view';
 import { MovieCard } from '../movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
+
+import './main-view.scss';
 
 
 export default class MainView extends React.Component {
@@ -13,12 +15,13 @@ constructor(){
     this.state = {
       movies: [],
       selectedMovie: null,
-      user: null
+      user: null,
+      registered: true
     };
 }
 
 componentDidMount() {
-  axios.get('https://watchitmovieapp.herokuapp.com/movies')
+  Axios.get('https://watchitmovieapp.herokuapp.com/movies')
   .then(response => {
     this.setState({
       movies:response.data
@@ -41,8 +44,17 @@ onLoggedIn(user) {
   });
 }
 
+onregister(registered, user) {
+  this.setState({
+    registered,
+    user
+  });
+}
+
 render() {
-  const { movies, selectedMovie, user } = this.state;
+  const { movies, selectedMovie, user, registered } = this.state;
+
+  if(!registered) return <RegistrationView onRegister={(registered, username) => this.onRegister(registered, username)} />;
 
   if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />;
 
