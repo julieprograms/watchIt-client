@@ -1,3 +1,25 @@
+.card-footer {
+  background-color: #ff007709 !important;
+  border-top: none !important;
+}
+
+html {
+  height: 100%;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.border-main {
+  border: 1px solid #ff02566b !important;
+}
+
+.card-border {
+  border-right: 5px solid #ff02566b !important;
+  border-bottom: 5px solid #ff02566b !important;
+  color: #0c4952e3 !important;
+}
+
 .btn-primary {
   background-color: #531300 !important;
   color: white !important;
@@ -6,7 +28,8 @@
 
 html {
   height: 100%;
-  background-color: #053e7410 !important;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  margin-top: 5%;
 }
 
 .login-card {
@@ -65,9 +88,11 @@ html {
 .input-font {
   font-size: 14px !important;
 }
-.card-footer {
-  background-color: #ff007709 !important;
-  border-top: none !important;
+.btn-primary {
+  background-color: #9c0049 !important;
+  color: white !important;
+  border-color: #9c0049 !important;
+  width: 10em;
 }
 
 html {
@@ -77,36 +102,16 @@ html {
   margin-bottom: 5%;
 }
 
-.border-main {
-  border: 1px solid #ff02566b !important;
-}
-
-.card-border {
-  border-right: 5px solid #ff02566b !important;
-  border-bottom: 5px solid #ff02566b !important;
-  color: #0c4952e3 !important;
-}
-
-.btn-primary {
-  background-color: #1588cad5 !important;
-  color: white !important;
-  border-color: #1588cad5 !important;
-  width: 10em;
-}
-
 .btn-secondary {
   width: 10em;
-  background-color: #4876915d !important;
-  border-color: #4876915d !important;
-  color: black !important;
 }
 .app-container {
-  background-color: #053e7410 !important;
+  background-color: rgba(107, 14, 65, 0.068) !important;
   color: #0c4952e3 !important;
 }
 
 html {
   height: 100%;
-  background-color: #053e7410 !important;
+  background-color: rgba(107, 14, 65, 0.068) !important;
 }
-/*# sourceMappingURL=index.1d334ea1.css.map */
+/*# sourceMappingURL=index.3f764291.css.map */

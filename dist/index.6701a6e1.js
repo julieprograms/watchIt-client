@@ -37560,7 +37560,7 @@ MovieCard.propTypes = {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","prop-types":"1tgq3","./movie-card.scss":"cF5gT","@parcel/transformer-js/src/esmodule-helpers.js":"gH5CR","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"a3zZc","react-bootstrap":"h2YVd"}],"cF5gT":[function() {},{}],"ikZdr":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","prop-types":"1tgq3","react-bootstrap":"h2YVd","./movie-card.scss":"cF5gT","@parcel/transformer-js/src/esmodule-helpers.js":"gH5CR","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"a3zZc"}],"cF5gT":[function() {},{}],"ikZdr":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3741 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37705,6 +37705,6 @@ MovieView.propTypes = {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","prop-types":"1tgq3","./movie-view.scss":"kvL93","@parcel/transformer-js/src/esmodule-helpers.js":"gH5CR","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"a3zZc","react-bootstrap":"h2YVd"}],"kvL93":[function() {},{}],"jyMAr":[function() {},{}],"jUTZ8":[function() {},{}]},["6GQGi","JTRJs","dLPEP"], "dLPEP", "parcelRequire0be5")
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","prop-types":"1tgq3","react-bootstrap":"h2YVd","./movie-view.scss":"kvL93","@parcel/transformer-js/src/esmodule-helpers.js":"gH5CR","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"a3zZc"}],"kvL93":[function() {},{}],"jyMAr":[function() {},{}],"jUTZ8":[function() {},{}]},["6GQGi","JTRJs","dLPEP"], "dLPEP", "parcelRequire0be5")
 
 //# sourceMappingURL=index.6701a6e1.js.map
