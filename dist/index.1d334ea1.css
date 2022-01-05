@@ -82,8 +82,8 @@ html {
 }
 
 .card-border {
-  border-right: 5px solid #ff02566b !important;
-  border-bottom: 5px solid #ff02566b !important;
+  border-right: 1px solid #ff02566b !important;
+  border-bottom: 1px solid #ff02566b !important;
   color: #0c4952e3 !important;
 }
 
