@@ -1,0 +1,117 @@
+.btn-primary {
+  background-color: #531300 !important;
+  color: white !important;
+  border-color: #531300 !important;
+}
+
+html {
+  height: 100%;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  margin-top: 5%;
+}
+
+.login-card {
+  border: 1px solid #ff02566b !important;
+  background-color: #fffffff1 !important;
+}
+
+.label-font-color {
+  color: #ff02566b !important;
+  font-size: 14px !important;
+}
+
+.input-font {
+  font-size: 14px !important;
+}
+
+.title-color {
+  color: #ff02566b !important;
+  font-weight: 400 !important;
+  margin-bottom: 10% !important;
+  font-size: 18px !important;
+  border-bottom: 1px solid;
+}
+.btn-primary {
+  background-color: #531300 !important;
+  color: white !important;
+  border-color: #531300 !important;
+}
+
+html {
+  height: 100%;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  margin-top: 5%;
+}
+
+.title-color {
+  color: #ff02566b !important;
+  font-weight: 400 !important;
+  margin-bottom: 10% !important;
+  font-size: 18px !important;
+  border-bottom: 1px solid;
+}
+
+.login-card {
+  border: 1px solid #ff02566b !important;
+  background-color: #fffffff1 !important;
+  color: #0c4952ee !important;
+  font-size: 15px;
+}
+
+.label-font-color {
+  color: #ff02566b !important;
+  font-size: 14px !important;
+}
+
+.input-font {
+  font-size: 14px !important;
+}
+.card-footer {
+  background-color: #ff007709 !important;
+  border-top: none !important;
+}
+
+html {
+  height: 100%;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.border-main {
+  border: 1px solid #ff02566b !important;
+}
+
+.card-border {
+  border-right: 5px solid #ff02566b !important;
+  border-bottom: 5px solid #ff02566b !important;
+  color: #0c4952e3 !important;
+}
+
+.btn-primary {
+  background-color: #9c0049 !important;
+  color: white !important;
+  border-color: #9c0049 !important;
+  width: 10em;
+}
+
+html {
+  height: 100%;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.btn-secondary {
+  width: 10em;
+}
+.app-container {
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  color: #0c4952e3 !important;
+}
+
+html {
+  height: 100%;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+}
+/*# sourceMappingURL=index.1d334ea1.css.map */

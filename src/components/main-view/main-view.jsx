@@ -6,6 +6,9 @@ import { RegistrationView } from '../registration-view/registration-view';
 import { MovieCard } from '../movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
 
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 import './main-view.scss';
 
 
@@ -55,24 +58,29 @@ onregister(registered, user) {
 render() {
   const { movies, selectedMovie, user, registered } = this.state;
 
-  if(!registered) return <RegistrationView onRegister={(registered, username) => this.onRegister(registered, username)} />;
-
   if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />;
-
+  
+  //if(user === 0) return <RegistrationView onRegister={(registered, username) => this.onRegister(registered, username)} />;
+  
   if (movies.length === 0) return <div className="main-view"/>;
 
     return (
-      <div className="main-view">
+      <Row className="main-view justify-content-md-center">
         {selectedMovie
-        ? <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => {
-          this.setSelectedMovie(newSelectedMovie);
-        }} />
+        ? (
+          <Col sm={12} md={4}>
+            <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => {
+          this.setSelectedMovie(newSelectedMovie); }} />
+            </Col> 
+        )
         : movies.map(movie => (
-          <MovieCard key={movie._id} movie={movie} onMovieClick={(newSelectedMovie) => {
-            this.setSelectedMovie(newSelectedMovie) }}/>
-        ))
+              <Col sm={12} md={6} lg={4}>
+                <MovieCard key={movie._id} movie={movie} onMovieClick={newSelectedMovie => {
+            this.setSelectedMovie(newSelectedMovie); }}/> 
+              </Col>
+          ))
       }
-      </div>
+      </Row>
     );
 }
 

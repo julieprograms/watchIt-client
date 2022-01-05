@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,11 @@
     "axios": "^0.24.0",
     "prop-types": "^15.8.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-bootstrap": "^2.1.0",
+    "react-dom": "^17.0.2",
+    "@parcel/transformer-sass": "^2.0.0-rc.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-rc.0"
+    
   }
 }

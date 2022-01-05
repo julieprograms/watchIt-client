@@ -1,5 +1,11 @@
-$color: steelblue;
-
-.watchIt {
-  color: $color;
+.app-container {
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  color: #0c4952e3 !important;
 }
+
+html {
+  height:100%;
+  background-color:rgba(107, 14, 65, 0.068) !important;
+}
+
+
