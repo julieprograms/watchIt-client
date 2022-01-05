@@ -37468,7 +37468,7 @@ class MovieCard extends _reactDefault.default.Component {
     render() {
         const { movie , onMovieClick  } = this.props;
         return(/*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Card, {
-            className: "card-border my-2",
+            className: "card-border card-color my-2",
             border: "main",
             style: {
                 height: '30rem'
@@ -37489,7 +37489,7 @@ class MovieCard extends _reactDefault.default.Component {
                     __self: this
                 }),
                 /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Card.Body, {
-                    className: "px-3 mx-1",
+                    className: "px-3 mx-1 card-body",
                     __source: {
                         fileName: "src/components/movie-card/movie-card.jsx",
                         lineNumber: 14
@@ -37497,7 +37497,7 @@ class MovieCard extends _reactDefault.default.Component {
                     __self: this,
                     children: [
                         /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Card.Title, {
-                            className: "mt-2",
+                            className: "mt-2 movie-title",
                             __source: {
                                 fileName: "src/components/movie-card/movie-card.jsx",
                                 lineNumber: 15
@@ -37526,7 +37526,7 @@ class MovieCard extends _reactDefault.default.Component {
                     children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
                         onClick: ()=>onMovieClick(movie)
                         ,
-                        variant: "primary",
+                        variant: "warning",
                         className: "center",
                         __source: {
                             fileName: "src/components/movie-card/movie-card.jsx",

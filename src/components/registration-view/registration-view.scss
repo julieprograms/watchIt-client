@@ -15,18 +15,26 @@
     font-weight: 400 !important;
     margin-bottom: 10% !important;
     font-size: 18px !important;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #ff0077;
+
+    background-color: #ff0077 !important;
+
+    color: #ffd200 !important;
+    font-size:30px !important;
+    font-family: 'Londrina Solid', cursive !important;
 }
 
 .login-card {
-    border: 1px solid #ff02566b !important;
-    background-color: #fffffff1 !important;
+    border: 1px solid #ff02566b ;
+    background-color: #f801684f !important;
     color: #0c4952ee !important;
     font-size: 15px;
+    border: 1px solid #ff0077 !important;
 }
 
 .label-font-color {
     color: #ff02566b !important;
+    color: #ffd000e8 !important;
     font-size: 14px !important;
 }
 
