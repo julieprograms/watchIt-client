@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-<<<<<<< Updated upstream
-=======
 import { Form, Button, Row, Col, Card, CardGroup, Container } from 'react-bootstrap';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 
->>>>>>> Stashed changes
 
 import './login-view.scss';
 import { RegistrationView } from '../registration-view/registration-view';
@@ -59,22 +56,6 @@ axios.post('https://watchitmovieapp.herokuapp.com/login', {
 };
 
 return(
-<<<<<<< Updated upstream
-    <>
-    <form className="login-form">
-    <label>
-        Username:
-        <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
-    </label>
-    <label>
-        Password:
-        <input type="text" value={password} onChange={e => setPassword(e.target.value)} />
-    </label>
-    <button type="submit" onClick={handleSubmit}>Submit</button>
-</form>
-<a href="../registration-view/registration-view.jsx"><button type="button">Register</button></a>
-</>
-=======
     <Container className="login-background">
         <Row className="login-row justify-content-md-center">
             <Col md={6}>
@@ -123,7 +104,6 @@ return(
     </Container>
 
 
->>>>>>> Stashed changes
  //register button is currently a template for the actual button!   
 );
 }

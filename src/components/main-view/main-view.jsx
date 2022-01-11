@@ -13,10 +13,6 @@ import { DirectorView } from '../director-view/director-view';
 import { GenreView } from '../genre-view/genre-view';
 import { ProfileView} from '../profile-view/profile-view';
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 import './main-view.scss';
 
 
@@ -114,29 +110,6 @@ onLoggedOut() {
 
 
 render() {
-<<<<<<< Updated upstream
-  const { movies, selectedMovie, user, registered } = this.state;
-
-  if(!registered) return <RegistrationView onRegister={(registered, username) => this.onRegister(registered, username)} />;
-
-  if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />;
-
-  if (movies.length === 0) return <div className="main-view"/>;
-
-    return (
-      <div className="main-view">
-        {selectedMovie
-        ? <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => {
-          this.setSelectedMovie(newSelectedMovie);
-        }} />
-        : movies.map(movie => (
-          <MovieCard key={movie._id} movie={movie} onMovieClick={(newSelectedMovie) => {
-            this.setSelectedMovie(newSelectedMovie) }}/>
-        ))
-      }
-      </div>
-    );
-=======
   const { movies, user} = this.state;
 
 
@@ -203,7 +176,6 @@ render() {
     </Router>
   );
   }
->>>>>>> Stashed changes
 }
 
 
