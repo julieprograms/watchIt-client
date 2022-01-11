@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-<<<<<<< Updated upstream
-
-=======
 import { Form, Button, CardGroup, Card, Col, Row, Alert } from 'react-bootstrap';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-//import { Link } from "react-router-dom";
->>>>>>> Stashed changes
+
+
 import './registration-view.scss';
 
 export function RegistrationView(props) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [email, setemail] = useState('');
+    const [email, setEmail] = useState('');
     const [birthday, setBirthday] = useState('');
 
     const [usernameErr, setUsernameErr] = useState({});
@@ -82,29 +79,6 @@ export function RegistrationView(props) {
 
 
     return (
-<<<<<<< Updated upstream
-        <div classname="registration-view">
-            <form className="registration-form">
-            <label>
-            Username:
-            <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
-        </label>
-        <label>
-            Password:
-            <input type="text" value={password} onChange={e => setPassword(e.target.value)} />
-        </label>
-        <label>
-            Email:
-            <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
-        </label>
-        <label>
-            Birthday:
-            <input type="date" value={birthday} onChange={e => setBirthday(e.target.value)} />
-        </label>
-        <button type="submit" onClick={handleSubmit}>Submit</button>
-            </form>
-        </div>
-=======
         <Row classname="registration-view">
             <Col><CardGroup><Card>
                 <Card.Title className="title-color pl-3 pt-3 pb-1">Will you watchIt?</Card.Title>
@@ -161,7 +135,6 @@ export function RegistrationView(props) {
             
         </Row>
         
->>>>>>> Stashed changes
     )
 }
 
@@ -171,5 +144,5 @@ RegistrationView.propTypes = {
         password: PropTypes.string.isRequired,
         email: PropTypes.string.isRequired,
         birthdate: PropTypes.string,
-});
+})
 }

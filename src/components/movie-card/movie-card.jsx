@@ -9,9 +9,6 @@ export class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
 
-<<<<<<< Updated upstream
-    return <div onClick={() => onMovieClick(movie)} className="movie-card">{movie.Title}</div>
-=======
     return (
       <Card className="card-border my-2" border="main" style={{ height: '30rem'}}>
         <Card.Img variant="top" src={movie.ImagePath} />
@@ -29,8 +26,7 @@ export class MovieCard extends React.Component {
       </Card>
 
       
->>>>>>> Stashed changes
-    );
+    )
   }
 }
 
