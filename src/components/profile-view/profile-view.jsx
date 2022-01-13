@@ -180,7 +180,7 @@ export class ProfileView extends React.Component {
         const {movies} = this.props;
         const {UsernameErr,PasswordErr,EmailErr,BirthdayErr} = this.state;
 
-        const Watchlist = movies.filter((m) => {
+        const watchlistMovies = movies.filter((movie) => {
             return Watchlist.includes(movie.Title);
         });
 
@@ -191,7 +191,7 @@ export class ProfileView extends React.Component {
                 {Watchlist.length === 0 && <p>...is still empty</p>}
 
                 <Row>
-                    {Watchlist.length > 0 && Watchlist.map((movie) =>{
+                    {watchlistMovies.length > 0 && watchlistMovies.map((movie) =>{
                         return (
                             <Col key={movie.Title}>
                                 <Link to={`/movies/${movie.Title}`} >
