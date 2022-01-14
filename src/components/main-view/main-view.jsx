@@ -1,12 +1,18 @@
 import React from 'react';
 import axios from 'axios';
 
+import { connect } from 'react-redux';
+
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import { Row, Col, Container} from 'react-bootstrap';
+
+import { setMovies } from '../../actions/actions';
+// import MoviesList from '../movies-list/movies-list';
 
 import Navbar from '../navbar/navbar';
 import { LoginView } from '../login-view/login-view';
 import { RegistrationView } from '../registration-view/registration-view';
+//movie card will be used in movieslist later:
 import { MovieCard } from '../movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
 import { DirectorView } from '../director-view/director-view';
@@ -23,10 +29,7 @@ constructor(){
     super();
 
     this.state = {
-      movies: [],
-      selectedMovie: null,
       user: null,
-      register: null
     };
 }
 
@@ -47,13 +50,12 @@ getMovies(token) {
   })
   .then(response => {
     //assign the result to the state
-    this.setState({
-      movies: response.data
+    this.props.setMovies(response.data);
     });
   })
   .catch(function (error) {
     console.log(error);
-  })
+  });
 }
 
 
@@ -110,7 +112,8 @@ onLoggedOut() {
 
 
 render() {
-  const { movies, user} = this.state;
+  let { movies } = this.props;
+  let { user } = this.state;
 
 
   return (
@@ -124,9 +127,11 @@ render() {
           <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
           </Col>
           if (movies.length === 0) return <div className="main-view" />
+          /*
           return movies.map(m => (
             <Col sm={12} md={6} lg={4} key={m._id}>
-              <MovieCard movie={m} />
+              <MovieCard movie={m} /> */
+              return <MoviesList movies={movies} />
             </Col>
           ))  
         }} />
@@ -178,4 +183,8 @@ render() {
   }
 }
 
+let mapStateToProps = state => {
+  return { movies: state.movies}
+}
 
+export default connect(mapStateToProps, { setMovies })(MainView);
