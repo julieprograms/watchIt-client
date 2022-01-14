@@ -1,3 +1,7 @@
+require('react-dom');
+window.React2 = require('react');
+console.log(window.React1 === window.React2);
+
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Form, Button, Row, Col, Card, CardGroup, Container } from 'react-bootstrap';
