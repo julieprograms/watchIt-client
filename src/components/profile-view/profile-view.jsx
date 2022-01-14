@@ -175,110 +175,111 @@ export class ProfileView extends React.Component {
 };
         
 
-    render() {
-        const {Watchlist} = this.state;
-        const {movies} = this.props;
-        const {UsernameErr,PasswordErr,EmailErr,BirthdayErr} = this.state;
+render() {
+    const {Watchlist} = this.state;
+    const {movies} = this.props;
+    const {UsernameErr,PasswordErr,EmailErr,BirthdayErr} = this.state;
 
-        const Watchlist = movies.filter((m) => {
-            return Watchlist.includes(movie.Title);
-        });
+    const watchlistMovies = movies.filter((movie) => {
+        return Watchlist.includes(movie.Title);
+    });
 
-        return(
-            <Container className="profile-view">
-                <h1>Your Profile</h1>
-                <h2>Your Watchlist</h2>
-                {Watchlist.length === 0 && <p>...is still empty</p>}
+    return(
+        <Container className="profile-view">
+            <h1>Your Profile</h1>
+            <h2>Your Watchlist</h2>
+            {Watchlist.length === 0 && <p>...is still empty</p>}
 
-                <Row>
-                    {Watchlist.length > 0 && Watchlist.map((movie) =>{
-                        return (
-                            <Col key={movie.Title}>
-                                <Link to={`/movies/${movie.Title}`} >
-                                <Card className="profile-view-card">
-                                <Card.Img variant="top" className="mx-auto" src={movie.ImagePath} />
-                                <Card.Body>
-                                <Card.Title>
-                                {movie.Title}
-                                </Card.Title>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <Button className="remove-button" onClick={() => this.removeFromWatchlist(movie.Title)}>Remove from Watchlist</Button>
-                                </Card.Footer>
-                                </Card>
-                                </Link>
+            <Row>
+                {watchlistMovies.length > 0 && watchlistMovies.map((movie) =>{
+                    return (
+                        <Col key={movie.Title}>
+                            <Link to={`/movies/${movie.Title}`} >
+                            <Card className="profile-view-card">
+                            <Card.Img variant="top" className="mx-auto" src={movie.ImagePath} />
+                            <Card.Body>
+                            <Card.Title>
+                            {movie.Title}
+                            </Card.Title>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button className="remove-button" onClick={() => this.removeFromWatchlist(movie.Title)}>Remove from Watchlist</Button>
+                            </Card.Footer>
+                            </Card>
+                            </Link>
 
-                                
-                            </Col>
-                        );
-                    })}
-                </Row>
+                            
+                        </Col>
+                    );
+                })}
+            </Row>
 
-                <h2>Update your information</h2>
+            <h2>Update your information</h2>
 
-                <Form
-                                    className="update-form"
-                                    onSubmit={(e) =>
-                                        this.editUser(
-                                            e,
-                                            this.Username,
-                                            this.Password,
-                                            this.Email,
-                                            this.Birthday
-                                        )
-                                    }
-                                >
-                                    <Form.Group>
-                                        <Form.Label>Username</Form.Label>
-                                        <Form.Control
-                                            type="text"
-                                            name="Username"
-                                            placeholder="New Username"
-                                            onChange={(e) => this.onUsernameChange(e.target.value)}
-                                            required
-                                        />
-                                    </Form.Group>
+            <Form
+                                className="update-form"
+                                onSubmit={(e) =>
+                                    this.editUser(
+                                        e,
+                                        this.Username,
+                                        this.Password,
+                                        this.Email,
+                                        this.Birthday
+                                    )
+                                }
+                            >
+                                <Form.Group>
+                                    <Form.Label>Username</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        name="Username"
+                                        placeholder="New Username"
+                                        onChange={(e) => this.onUsernameChange(e.target.value)}
+                                        required
+                                    />
+                                </Form.Group>
 
-                                    <Form.Group>
-                                        <Form.Label>Password</Form.Label>
-                                        <Form.Control
-                                            type="password"
-                                            name="Password"
-                                            placeholder="New Password"
-                                            onChange={(e) => this.onPasswordChange(e.target.value)}
-                                            required
-                                        />
-                                    </Form.Group>
+                                <Form.Group>
+                                    <Form.Label>Password</Form.Label>
+                                    <Form.Control
+                                        type="password"
+                                        name="Password"
+                                        placeholder="New Password"
+                                        onChange={(e) => this.onPasswordChange(e.target.value)}
+                                        required
+                                    />
+                                </Form.Group>
 
-                                    <Form.Group>
-                                        <Form.Label>Email</Form.Label>
-                                        <Form.Control
-                                            type="email"
-                                            name="Email"
-                                            placeholder="Enter Email"
-                                            onChange={(e) => this.onEmailChange(e.target.value)}
-                                            required
-                                        />
-                                    </Form.Group>
+                                <Form.Group>
+                                    <Form.Label>Email</Form.Label>
+                                    <Form.Control
+                                        type="email"
+                                        name="Email"
+                                        placeholder="Enter Email"
+                                        onChange={(e) => this.onEmailChange(e.target.value)}
+                                        required
+                                    />
+                                </Form.Group>
 
-                                    <Form.Group>
-                                        <Form.Label>Birthday</Form.Label>
-                                        <Form.Control
-                                            type="date"
-                                            name="Birthday"
-                                            onChange={(e) => this.onBirthdayChange(e.target.value)}
-                                        />
-                                    </Form.Group>
-                                    <br />
-                                    <div className="bt">
-                                        <Button variant="primary" type="submit" onClick={this.updateUser} >Update User</Button>
-                                        <Button className="delete-button" variant="danger" onClick={this.deleteUser} >Delete User </Button>
-                                    </div>
-                                </Form>
-            </Container>
-        );
-    } 
+                                <Form.Group>
+                                    <Form.Label>Birthday</Form.Label>
+                                    <Form.Control
+                                        type="date"
+                                        name="Birthday"
+                                        onChange={(e) => this.onBirthdayChange(e.target.value)}
+                                    />
+                                </Form.Group>
+                                <br />
+                                <div className="bt">
+                                    <Button variant="primary" type="submit" onClick={this.updateUser} >Update User</Button>
+                                    <Button className="delete-button" variant="danger" onClick={this.deleteUser} >Delete User </Button>
+                                </div>
+                            </Form>
+        </Container>
+    );
+} 
 }
+
 
 ProfileView.propTypes = {
     users: PropTypes.shape({
