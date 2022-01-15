@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom';
 
 
 import './login-view.scss';
-import { RegistrationView } from '../registration-view/registration-view';
+
 
 export function LoginView(props) {
 const [ username, setUsername ] = useState('');
@@ -89,7 +89,7 @@ return(
                                 </Form.Group>
                                 <Form.Group className="justify-content-md-center">
                                         <Button className="mt-2 mr-2" variant="primary" type="submit" onClick={handleSubmit}>Log in</Button>
-                                        <Button className="mt-2" variant="secondary"><Link to={RegistrationView}>Register</Link></Button>
+                                        <Button className="mt-2" variant="secondary"><Link to='/Users'>Register</Link></Button>
                                         
                                     
                                 </Form.Group>
