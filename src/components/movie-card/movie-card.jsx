@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Card, Button, Row, Col } from 'react-bootstrap';
 
 import { Link } from 'react-router-dom';
 
@@ -8,7 +9,7 @@ import './movie-card.scss';
 export class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
-    
+
     return (
       <Card className="card-border my-2" border="main" style={{ height: '30rem'}}>
         <Card.Img variant="top" src={movie.ImagePath} />
