@@ -1,18 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import axios from 'axios';
 import { Row, Col, Button, Alert} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
+
 import './movie-view.scss';
 
-export class MovieView extends React.Component {
 
+export class MovieView extends React.Component {
+  constructor() {
+    super();
+  }
+
+
+ 
   addFavourite() {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
 
     axios
-    .post(`https://watchitmovieapp.herokuapp.com/users/${user}/movies/${this.props.movie.title}`, {}, {
+    .post(`https://watchitmovieapp.herokuapp.com/Users/${user}/movies/${this.props.movie.Title}`, {}, {
       headers: {Authorization: `Bearer ${token}`}
     })
     .then(response => {
@@ -62,8 +70,8 @@ export class MovieView extends React.Component {
       
     );
   }
-
 }
+
 
 
 MovieView.propTypes = {

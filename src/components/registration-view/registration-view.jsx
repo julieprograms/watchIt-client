@@ -92,7 +92,7 @@ export function RegistrationView(props) {
                     required 
                     placeholder="Enter a username"
                     />
-                    {values.usernameErr && <p>{values.usernameErr}</p>}
+                    
         </Form.Group>
         <Form.Group>
             <Form.Label className="label-font-color mt-3 mb-1">Password</Form.Label>
@@ -103,7 +103,7 @@ export function RegistrationView(props) {
             minLength="6" 
             placeholder="Enter a password"
             />
-        {values.passwordErr && <p>{values.passwordErr}</p>}
+       
         </Form.Group>
         <Form.Group>
             <Form.Label className="label-font-color mt-3 mb-1">Email</Form.Label>
@@ -113,7 +113,7 @@ export function RegistrationView(props) {
             required 
             placeholder="Enter Email"
             />
-            {values.emailErr && <p>{values.emailErr}</p>}
+            
             </Form.Group>
         <Form.Group>
             <Form.Label className="label-font-color mt-3 mb-1">Birthday</Form.Label>

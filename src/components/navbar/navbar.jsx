@@ -1,26 +1,21 @@
 import React from 'react';
 import {Navbar, Container, Button, Nav} from 'react-bootstrap';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 
 import './navbar.scss';
 
-export default class NavBar extends React.Component {
-    constructor () {
-      super();
-  
-      this.state = {};
-    }
-  
+export default function NavBar(props) {
+    
     
 
-    onLoggedOut() {
+    function onLoggedOut() {
         localStorage.clear();
         window.open("/", "_self");
     }
 
-    render() {
+    
 
-    const {user} = this.props;
+    const {user} = props;
     
     
 
@@ -33,8 +28,8 @@ export default class NavBar extends React.Component {
                  <Navbar.Collapse id="responsive-navbar-nav">
                      <Nav className="ml-auto">
                          <NavLink to="/" >Movies</NavLink>
-                         <NavLink to={`/users/${user}`}>Profile</NavLink> 
-                         <NavLink to="/"><Button variant="link" onClick={() => {onLoggedOut() }}>Logout</Button></NavLink>
+                         <NavLink to={`/Users/${user}`}>Profile</NavLink> 
+                         <NavLink to="/" onClick={() => {onLoggedOut() }}>Logout</NavLink>
                     </Nav>
                  </Navbar.Collapse>
 
@@ -44,4 +39,6 @@ export default class NavBar extends React.Component {
             }
         </>
     )    
-}}
+}
+
+
