@@ -6,11 +6,11 @@
 
 html {
   height: 100%;
-  background-color: #053e7410 !important;
+  background-color: #0530581e !important;
 }
 
 .login-card {
-  border: 1px solid #ff02566b !important;
+  border: 1px solid #ffee02 !important;
   background-color: #fffffff1 !important;
 }
 
@@ -28,7 +28,7 @@ html {
   font-weight: 400 !important;
   margin-bottom: 10% !important;
   font-size: 18px !important;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #ffee02;
 }
 .btn-primary {
   background-color: #531300 !important;
@@ -79,7 +79,19 @@ html {
   border-color: #4876915d !important;
   color: black !important;
 }
+.navbar {
+  font-family: "Rubik", sans-serif;
+}
 
+.navbar-logo {
+  color: #fdcf01 !important;
+  font-family: "Knewave", cursive;
+}
+
+.nav-link {
+  color: #fdcf01 !important;
+  font-family: "Rubik", sans-serif;
+}
 
 
 html {
@@ -94,9 +106,8 @@ html {
 }
 
 .card-border {
-  border-right: 1px solid #ff0256e5 !important;
-  border-bottom: 1px solid #ff0256da !important;
-  color: #0c4952e3 !important;
+  border-right: 1px solid white !important;
+  border-bottom: 1px solid white !important;
 }
 
 .black-bg {
@@ -135,13 +146,20 @@ html {
   right: 0;
   padding-left: 4%;
   padding-right: 3%;
+  background-color: rgba(0, 0, 0, 0.295) !important;
   color: #fdcf01 !important;
   font-size: 25px;
-  backdrop-filter: blur(13px);
+  backdrop-filter: blur(10px);
   padding-top: 1%;
   padding-bottom: 50%;
-  font-family: "Londrina Solid", cursive;
   font-family: "Knewave", cursive;
+}
+
+.movie-card-btn {
+  background-color: rgba(250, 211, 37, 0.959) !important;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px !important;
+  font-weight: bold !important;
 }
 
 

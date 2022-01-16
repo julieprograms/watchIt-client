@@ -27,9 +27,9 @@ export default function NavBar(props) {
                  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                  <Navbar.Collapse id="responsive-navbar-nav">
                      <Nav className="ml-auto">
-                         <NavLink to="/" >Movies</NavLink>
-                         <NavLink to={`/Users/${user}`}>Profile</NavLink> 
-                         <NavLink to="/" onClick={() => {onLoggedOut() }}>Logout</NavLink>
+                         <NavLink className="nav-link" to="/" >Movies</NavLink>
+                         <NavLink className="nav-link" to={`/Users/${user}`}>Profile</NavLink> 
+                         <NavLink className="nav-link" to="/" onClick={() => {onLoggedOut() }}>Logout</NavLink>
                     </Nav>
                  </Navbar.Collapse>
 

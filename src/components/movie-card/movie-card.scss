@@ -12,9 +12,9 @@ html {
   }
   
 .card-border{
-    border-right: 1px solid #ff0256e5 !important;
-    border-bottom: 1px solid #ff0256da !important;
-    color: #0c4952e3 !important;
+    border-right: 1px solid rgb(255, 255, 255) !important;
+    border-bottom: 1px solid rgb(255, 255, 255) !important;
+    
 
 }
 
@@ -56,12 +56,18 @@ html {
   right: 0;
   padding-left: 4%;
   padding-right:3%;
-  
+  background-color: rgba(0, 0, 0, 0.295) !important;
   color: rgb(253, 207, 1) !important;
   font-size: 25px;
-  backdrop-filter: blur(13px);
+  backdrop-filter: blur(10px);
   padding-top: 1%;
   padding-bottom: 50%;
-  font-family: 'Londrina Solid', cursive;
   font-family: 'Knewave', cursive;
+}
+
+.movie-card-btn {
+  background-color: rgba(250, 211, 37, 0.959) !important;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px !important;
+  font-weight: bold !important;
 }

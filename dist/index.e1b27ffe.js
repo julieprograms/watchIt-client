@@ -1027,6 +1027,7 @@ class watchItApplication extends _reactDefault.default.Component {
         return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRedux.Provider, {
             store: store,
             children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_containerDefault.default, {
+                className: "main-container",
                 children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_mainViewDefault.default, {
                 }, void 0, false, {
                     fileName: "src/index.jsx",
@@ -35977,6 +35978,7 @@ function NavBar(props) {
                             className: "ml-auto",
                             children: [
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.NavLink, {
+                                    className: "nav-link",
                                     to: "/",
                                     children: "Movies"
                                 }, void 0, false, {
@@ -35985,6 +35987,7 @@ function NavBar(props) {
                                     columnNumber: 26
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.NavLink, {
+                                    className: "nav-link",
                                     to: `/Users/${user}`,
                                     children: "Profile"
                                 }, void 0, false, {
@@ -35993,6 +35996,7 @@ function NavBar(props) {
                                     columnNumber: 26
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.NavLink, {
+                                    className: "nav-link",
                                     to: "/",
                                     onClick: ()=>{
                                         onLoggedOut();
@@ -36828,8 +36832,8 @@ class MovieCard extends _reactDefault.default.Component {
                     children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
                         to: `/movies/${movie._id}`,
                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Button, {
-                            variant: "link",
-                            className: "center",
+                            variant: "warning",
+                            className: "center movie-card-btn",
                             children: "Open"
                         }, void 0, false, {
                             fileName: "src/components/movie-card/movie-card.jsx",

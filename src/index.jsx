@@ -18,7 +18,7 @@ class watchItApplication extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <Container>
+        <Container className="main-container">
           <MainView />
         </Container>
       </Provider>
