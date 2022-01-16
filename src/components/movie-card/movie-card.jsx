@@ -11,11 +11,11 @@ export class MovieCard extends React.Component {
     const { movie } = this.props;
 
     return (
-      <Card className="card-border my-2" border="main" style={{ height: '30rem'}}>
-        <Card.Img variant="top" src={movie.ImagePath} />
-        <Card.Body className="px-3 mx-1">
-          <Card.Title className="mt-2">{movie.Title}</Card.Title>
-          <Card.Text className="mt-5 px-2">{movie.Description}</Card.Text>
+      <Card className="card-border black-bg my-2" border="main" style={{ height: '30rem', 'max-width': '23rem'}}>
+        <Card.Img variant="top" id="movie-card-img" src={movie.ImagePath} />
+        <Card.Body className="px-3 mx-1" >
+          <Card.Header className="card-header"><Card.Title id="movie-card-title">{movie.Title}</Card.Title></Card.Header>
+          <Card.Text className="mt-5 px-2" id="movie-card-text">{movie.Description}</Card.Text>
           
           
         </Card.Body>

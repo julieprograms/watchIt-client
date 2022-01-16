@@ -1,0 +1,66 @@
+
+html {
+    height:100%;
+    background-color:rgba(107, 14, 65, 0.068) !important;
+    margin-top: 4%;
+    margin-bottom: 5%;
+  }
+  
+
+.border-main{
+    border: 1px solid rgb(255, 255, 255) !important;
+  }
+  
+.card-border{
+    border-right: 1px solid #ff0256e5 !important;
+    border-bottom: 1px solid #ff0256da !important;
+    color: #0c4952e3 !important;
+
+}
+
+.black-bg {
+  background-color: black !important;
+  color: rgb(250, 246, 227) !important;
+}
+
+.card-footer {
+    background-color: #fcfbe310 !important;
+    border-top: none !important;
+    z-index: 1 !important;
+}
+
+#movie-card-img {
+  max-height: 200px;
+  position: relative !important;
+  display: inline-block !important;
+}
+
+
+#movie-card-text {
+  max-height: 200px;
+  font-size: 13px;
+  margin-top: 19% !important;
+  position: relative;
+}
+
+.card-header {
+  
+  min-width: 100%;
+  margin-top: -15%;
+  
+  
+ 
+}
+
+#movie-card-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 8%;
+  padding-right: 8%;
+  color: rgb(253, 207, 1) !important;
+  font-size: 22px;
+  backdrop-filter: blur(13px);
+  padding-top: 1%;
+  padding-bottom: 50%;
+}
