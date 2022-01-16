@@ -4,7 +4,7 @@ import {NavLink, Link} from 'react-router-dom';
 
 import './navbar.scss';
 
-export default function NavBar(props) {
+export function NavBar(props) {
     
     
 

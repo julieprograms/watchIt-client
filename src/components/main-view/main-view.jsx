@@ -5,10 +5,11 @@ import { connect } from 'react-redux';
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import { Row, Col, Container} from 'react-bootstrap';
 
-import Navbar from '../navbar/navbar';
+import { Navbar } from '../navbar/navbar';
 import { LoginView } from '../login-view/login-view';
 import { RegistrationView } from '../registration-view/registration-view';
-import { MovieCard } from '../movie-card/movie-card';
+//#1 moviecard removed from mainview, will be called through movies-list
+//import { MovieCard } from '../movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
 import { DirectorView } from '../director-view/director-view';
 import { GenreView } from '../genre-view/genre-view';
@@ -16,17 +17,22 @@ import { ProfileView} from '../profile-view/profile-view';
 
 import './main-view.scss';
 
+// #0
 import { setMovies } from '../../actions/actions';
 
-export class MainView extends React.Component {
+//not written yet:
+import MoviesList from '../movies-list/movies-list';
+
+
+//#2 export keword removed
+class MainView extends React.Component {
 
 constructor(){
     super();
 
+    //#3 movies state removed
     this.state = {
-      selectedMovie: null,
-      user: null,
-      register: null
+      user: null
     };
 }
 
@@ -47,9 +53,8 @@ getMovies(token) {
   })
   .then(response => {
     //assign the result to the state
-    this.setState({
-      movies: response.data
-    });
+    //#4 changed to redux
+    this.props.setMovies(response.data);
   })
   .catch(function (error) {
     console.log(error);
@@ -110,7 +115,10 @@ onLoggedOut() {
 
 
 render() {
-  const { movies, user} = this.state;
+  let { user } = this.state;
+  //#5 changed to props
+  let { movies } = this.props;
+
 
 
   return (
@@ -124,11 +132,9 @@ render() {
           <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
           </Col>
           if (movies.length === 0) return <div className="main-view" />
-          return movies.map(m => (
-            <Col sm={12} md={6} lg={4} key={m._id}>
-              <MovieCard movie={m} />
-            </Col>
-          ))  
+          // #6
+          return <MoviesList movies={movies}/>
+           // sm={12} md={6} lg={4}  
         }} />
 
         <Route exact path="/Users" render={() => {
@@ -178,4 +184,11 @@ render() {
   }
 }
 
+//#7
+let mapStateToProps = state => {
+  return { movies: state.movies }
+}
+
+//#8
+export default connect(mapStateToProps, { setMovies })(MainView);
 

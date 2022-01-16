@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { devToolsEnhancer } from 'redux-devtools-extension';
 import moviesApp from './reducers/reducers';
 
-import {MainView} from './components/main-view/main-view';
+import MainView from './components/main-view/main-view';
 
 //import statement to indicate that './index.scss' needs to be bundled
 import './index.scss';
