@@ -38,29 +38,30 @@ html {
 
 #movie-card-text {
   max-height: 200px;
-  font-size: 13px;
-  margin-top: 19% !important;
+  font-size: 12px;
+  margin-top: 22% !important;
   position: relative;
+  font-family: 'Rubik', sans-serif;
 }
 
 .card-header {
   
   min-width: 100%;
-  margin-top: -15%;
-  
-  
- 
+  margin-top: -17%;
 }
 
 #movie-card-title {
   position: absolute;
   left: 0;
   right: 0;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 4%;
+  padding-right:3%;
+  
   color: rgb(253, 207, 1) !important;
-  font-size: 22px;
+  font-size: 25px;
   backdrop-filter: blur(13px);
   padding-top: 1%;
   padding-bottom: 50%;
+  font-family: 'Londrina Solid', cursive;
+  font-family: 'Knewave', cursive;
 }
