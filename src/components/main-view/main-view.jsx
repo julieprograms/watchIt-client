@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { connect } from 'react-redux';
 
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import { Row, Col, Container} from 'react-bootstrap';
@@ -15,7 +16,7 @@ import { ProfileView} from '../profile-view/profile-view';
 
 import './main-view.scss';
 
-
+import { setMovies } from '../../actions/actions';
 
 export class MainView extends React.Component {
 
@@ -23,7 +24,6 @@ constructor(){
     super();
 
     this.state = {
-      movies: [],
       selectedMovie: null,
       user: null,
       register: null
