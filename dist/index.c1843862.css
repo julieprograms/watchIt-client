@@ -1,0 +1,130 @@
+@import "https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Chicle&display=swap";
+.login-card {
+  border: 1px solid #ff02566b;
+  border: 1px solid #ffffff !important;
+  background-color: black !important;
+  color: #ffd200 !important;
+}
+
+.label-font-color {
+  color: #ff02566b;
+  color: #ffd902 !important;
+  font-size: 14px !important;
+}
+
+.input-font {
+  font-size: 14px !important;
+}
+
+.title-color {
+  color: #ff02566b;
+  font-weight: 400;
+  margin-bottom: 10% !important;
+  font-size: 18px;
+  border-bottom: 1px solid;
+  color: #ffd200 !important;
+  font-size: 30px !important;
+  font-family: "Londrina Solid", cursive !important;
+}
+.btn-primary {
+  background-color: #531300 !important;
+  color: white !important;
+  border-color: #531300 !important;
+}
+
+html {
+  height: 100%;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  margin-top: 5%;
+}
+
+.title-color {
+  color: #ff02566b !important;
+  font-weight: 400 !important;
+  margin-bottom: 10% !important;
+  font-size: 18px !important;
+  border-bottom: 1px solid #ff0077;
+  background-color: #ff0077 !important;
+  color: #ffd200 !important;
+  font-size: 30px !important;
+  font-family: "Londrina Solid", cursive !important;
+}
+
+.login-card {
+  border: 1px solid #ff02566b;
+  background-color: #f801684f !important;
+  color: #0c4952ee !important;
+  font-size: 15px;
+  border: 1px solid #ff0077 !important;
+}
+
+.label-font-color {
+  color: #ff02566b !important;
+  color: #ffd000e8 !important;
+  font-size: 14px !important;
+}
+
+.input-font {
+  font-size: 14px !important;
+}
+
+.btn-primary {
+  background-color: #1588cad5;
+  color: white;
+  border-color: #1588cad5;
+  background-color: #ffd000 !important;
+  color: #3d011a !important;
+  border-color: #fcb900 !important;
+  width: 10em;
+  background-color: #f70a6d !important;
+  color: #fce93d !important;
+  border-color: #f70a6d !important;
+}
+
+.btn-secondary {
+  width: 10em;
+  background-color: #4876915d;
+  border-color: #4876915d;
+  color: #f3e8ca !important;
+  background-color: #b93e71d5 !important;
+  border-color: #cc318646 !important;
+}
+.card-footer {
+  background-color: #ff007709 !important;
+  border-top: none !important;
+}
+
+.movie-title {
+  font-size: 30px !important;
+  color: #ffd200 !important;
+  font-family: "Londrina Solid", cursive !important;
+}
+
+.card-color {
+  background-color: #ff0077 !important;
+  color: #292201ec !important;
+}
+
+.border-main {
+  border: 1px solid #ff02566b;
+  border: 2px solid #000000 !important;
+}
+
+.card-border {
+  border-right: 1px solid #ff02566b;
+  border-bottom: 1px solid #ff02566b;
+  color: #021c20e3 !important;
+}
+.app-container {
+  background-color: #053e7410;
+  background-color: #03020cda !important;
+  color: #0c4952e3 !important;
+}
+html {
+  height: 100%;
+  background-color: #053e7410 !important;
+  background-color: #03020cda !important;
+}
+/*# sourceMappingURL=index.c1843862.css.map */
