@@ -20,7 +20,7 @@ export class MovieView extends React.Component {
     const user = localStorage.getItem('user');
 
     axios
-    .post(`https://watchitmovieapp.herokuapp.com/Users/${user}/movies/${this.props.movie.Title}`, {}, {
+    .post(`https://watchitmovieapp.herokuapp.com/Users/${user}/movies/${this.props.movie._id}`, {}, {
       headers: {Authorization: `Bearer ${token}`}
     })
     .then(response => {
@@ -38,9 +38,9 @@ export class MovieView extends React.Component {
     return (
       <Row className="movie-view">  
         <Col> 
-          <div className="movie-poster">
+        <div className="movie-poster">
       
-          <img src={movie.ImagePath} /></div>
+      <img src={movie.ImagePath} /></div>
         <div className="movie-title"><span className="label">Title: </span>
           <span className="value">{movie.Title}</span></div>
         
@@ -49,7 +49,7 @@ export class MovieView extends React.Component {
 
         </Col>
       <div className="mt-2">
-<Button className= "favourite-button" value={movie.title} onClick={(e) => this.addFavourite(e, movie)}>Add to Watchlist</Button>
+<Button className= "favourite-button" value={movie._id} onClick={(e) => this.addFavourite(e, movie)}>Add to Watchlist</Button>
       </div>
         <div className="mt-2">
            <Link to={`/movies/genres/${movie.Genre.Name}`}>
@@ -77,16 +77,6 @@ export class MovieView extends React.Component {
 MovieView.propTypes = {
   movie: PropTypes.shape({
     Title: PropTypes.string.isRequired,
-    Description: PropTypes.string.isRequired,
-    Featured: PropTypes.bool.isRequired,
-    ImagePath: PropTypes.string,
-    _id: PropTypes.string.isRequired,
-    Genre: PropTypes.shape({
-      Name: PropTypes.string.isRequired
-    }).isRequired,
-    Director: PropTypes.shape({
-      Name: PropTypes.string.isRequired
-    })
-  }).isRequired,
-  onBackClick: PropTypes.func.isRequired
+    Description: PropTypes.string.isRequired
+    }).isRequired
 };

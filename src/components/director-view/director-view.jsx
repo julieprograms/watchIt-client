@@ -47,8 +47,7 @@ DirectorView.proptypes ={
     Director: PropTypes.shape({
         Name: PropTypes.string.isRequired,
         Bio: PropTypes.string,
-        Birthdate: PropTypes.number,
-        Deathdate: PropTypes.number,
-    }).isRequired,
+        Birthdate: PropTypes.instanceOf(Date)
+    }).isRequired
 };
 

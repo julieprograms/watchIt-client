@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import { Row, Col, Container} from 'react-bootstrap';
 
-import { Navbar } from '../navbar/navbar';
+import  Navbar  from '../navbar/navbar';
 import { LoginView } from '../login-view/login-view';
 import { RegistrationView } from '../registration-view/registration-view';
 //#1 moviecard removed from mainview, will be called through movies-list
@@ -134,7 +134,7 @@ render() {
           if (movies.length === 0) return <div className="main-view" />
           // #6
           return <MoviesList movies={movies}/>
-           // sm={12} md={6} lg={4}  
+          
         }} />
 
         <Route exact path="/Users" render={() => {

@@ -2,7 +2,7 @@ import React from 'react';
 import {Col, Container} from 'react-bootstrap';
 import { connect } from 'react-redux';
 
-import visibilityFilterInput from '../visibility-filter-input/visibility-filter-input';
+import VisibilityFilterInput from '../visibility-filter-input/visibility-filter-input';
 import {MovieCard} from '../movie-card/movie-card';
 
 const mapStateToProps = state => {
