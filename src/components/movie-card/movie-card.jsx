@@ -11,8 +11,8 @@ export class MovieCard extends React.Component {
     const { movie } = this.props;
 
     return (
-      <Card className="card-border black-bg my-2" border="main" style={{ height: '30rem', 'max-width': '23rem'}}>
-        <Card.Img variant="top" id="movie-card-img" src={movie.ImagePath} />
+      <Card className="card-border black-bg my-2" border="main" style={{ height: '30rem', 'max-width': '23rem', 'min-width': '22rem'}}>
+        <Card.Img variant="top" id="movie-card-img" src={movie.ImagePath} style={{ 'max-height': '12rem'}}/>
         <Card.Body className="px-3 mx-1" >
           <Card.Header className="card-header"><Card.Title id="movie-card-title">{movie.Title}</Card.Title></Card.Header>
           <Card.Text className="mt-5 px-2" id="movie-card-text">{movie.Description}</Card.Text>

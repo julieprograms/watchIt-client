@@ -20,7 +20,7 @@ html {
 
 .black-bg {
   background-color: black !important;
-  color: rgb(250, 246, 227) !important;
+  color: rgb(187, 186, 180) !important;
 }
 
 .card-footer {
@@ -42,6 +42,7 @@ html {
   margin-top: 22% !important;
   position: relative;
   font-family: 'Rubik', sans-serif;
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 .card-header {
@@ -50,24 +51,26 @@ html {
   margin-top: -17%;
 }
 
+
+
 #movie-card-title {
   position: absolute;
   left: 0;
   right: 0;
-  padding-left: 4%;
-  padding-right:3%;
-  background-color: rgba(0, 0, 0, 0.295) !important;
+  padding-left: 8%;
+  padding-right:6%;
+  background-color: rgba(0, 0, 0, 0.651);
   color: rgb(253, 207, 1) !important;
-  font-size: 25px;
-  backdrop-filter: blur(10px);
-  padding-top: 1%;
-  padding-bottom: 50%;
+  font-size: 23px;
+  backdrop-filter: blur(9px);
+  padding-top: 2%;
   font-family: 'Knewave', cursive;
+  border-top: 1px solid rgba(0, 0, 0, 0.555);
 }
 
 .movie-card-btn {
-  background-color: rgba(250, 211, 37, 0.959) !important;
+  background-color: rgba(250, 211, 37, 0.979) !important;
   font-family: 'Rubik', sans-serif;
-  font-size: 14px !important;
-  font-weight: bold !important;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 12px !important;
 }
