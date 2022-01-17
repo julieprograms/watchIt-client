@@ -37553,7 +37553,11 @@ function VisibilityFilterInput(props) {
         onChange: (e)=>props.setFilter(e.target.value)
         ,
         value: props.visibilityFilter,
-        placeholder: "filter"
+        placeholder: "search",
+        className: "mt-3 mb-3",
+        style: {
+            'max-width': '66rem'
+        }
     }, void 0, false, {
         fileName: "src/components/visibility-filter-input/visibility-filter-input.jsx",
         lineNumber: 9,

@@ -9,7 +9,9 @@ function VisibilityFilterInput(props) {
     return <Form.Control
     onChange={e => props.setFilter(e.target.value)}
     value={props.visibilityFilter}
-    placeholder="filter"
+    placeholder="search"
+    className="mt-3 mb-3"
+    style={{'max-width':'66rem'}}
     />;
 }
 
