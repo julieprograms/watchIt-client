@@ -1,22 +1,16 @@
 
 html {
-    height:100%;
-    background-color:rgba(107, 14, 65, 0.068) !important;
+    
+  background-color:rgba(107, 14, 65, 0.068) !important;
     margin-top: 4%;
     margin-bottom: 5%;
+  
   }
   
 
 .border-main{
-    border: 1px solid rgb(255, 255, 255) !important;
+    border: 1px solid rgba(24, 20, 20, 0.911) !important;
   }
-  
-.card-border{
-    border-right: 1px solid rgb(255, 255, 255) !important;
-    border-bottom: 1px solid rgb(255, 255, 255) !important;
-    
-
-}
 
 .black-bg {
   background-color: black !important;
@@ -24,15 +18,16 @@ html {
 }
 
 .card-footer {
-    background-color: #fcfbe310 !important;
+    background-color: #42414b1f !important;
     border-top: none !important;
     z-index: 1 !important;
 }
 
 #movie-card-img {
   max-height: 200px;
-  position: relative !important;
-  display: inline-block !important;
+  top: 0 !important;
+  position: relative;
+  display: inline-block;
 }
 
 

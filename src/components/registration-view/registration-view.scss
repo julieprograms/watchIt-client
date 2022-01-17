@@ -3,33 +3,91 @@
     color:white !important;
     border-color:#531300 !important;
   }
+  
 
   html {
-    height:100%;
-    background-color:rgba(107, 14, 65, 0.068) !important;
+    background-color:rgba(3, 1, 22, 0.568) !important;
     margin-top: 5%;
+    height:100%;
   }
 
 .title-color {
-    color: #ff02566b !important;
+    color: #f8f8e68f !important;
     font-weight: 400 !important;
-    margin-bottom: 10% !important;
-    font-size: 18px !important;
-    border-bottom: 1px solid;
+    margin-bottom: 8% !important;
+    font-size: 16px !important;
+    border-bottom: 1px solid #c4c4c44d;
+    font-family: 'Balsamiq Sans', cursive;
+    border: none !important;
+    margin-left: 24% !important;
 }
 
-.login-card {
-    border: 1px solid #ff02566b !important;
-    background-color: #fffffff1 !important;
-    color: #0c4952ee !important;
-    font-size: 15px;
+.register-card {
+    border: 1px solid #ffffff2d !important;
+    background-color: #000000e3 !important;
+    color:rgb(175, 175, 175);
+    font-size: 12px;
+    font-family: 'Balsamiq Sans', cursive;
+    
 }
 
 .label-font-color {
-    color: #ff02566b !important;
+    color: #ebebebc9 !important;
     font-size: 14px !important;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 
 .input-font {
     font-size: 14px !important;
+}
+
+.button-submit {
+    color: rgba(255, 255, 255, 0.884);
+    background-color: rgb(255, 230, 0) !important;
+    font-size: 14px !important;
+    padding: 2% !important;
+    font-family: 'Balsamiq Sans', cursive;
+    border: none !important;
+    margin-top: 2% !important;
+    margin-left: 30%;
+}
+
+
+.button-second {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.911);
+    font-size: 14px !important;
+    padding: 2% !important;
+    font-family: 'Balsamiq Sans', cursive;
+    border: none !important;
+    border: none !important;
+    margin-top: 2% !important;
+    margin-left: 30%;
+}
+
+.to-login-text {
+    margin-top: 2%;
+    padding-top: 2% !important;
+    margin-right: 2% !important;
+    font-size: 14px;
+    color: #fffd6ee0 !important;
+    margin-left: 25%;
+    margin-right: 10%;
+
+}
+
+.font-title {
+    font-family: 'Knewave', cursive !important;
+    font-size: 26px !important;
+    margin:1%;
+    color: #faf600 !important;
+}
+
+.link-to-login {
+    margin-left: 2%;
+    font-size: 26px;
+    color: #faf600 !important;
+    font-family: 'Knewave', cursive !important;
+
 }

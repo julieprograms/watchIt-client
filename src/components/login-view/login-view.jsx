@@ -62,10 +62,10 @@ axios.post('https://watchitmovieapp.herokuapp.com/login', {
 return(
     <Container className="login-background">
         <Row className="login-row justify-content-md-center">
-            <Col md={6}>
+            <Col md={8}>
                 <CardGroup>
                     <Card className="login-card" >
-                        <Card.Title className="title-color pl-3 pt-3 pb-1" >Time to watchIt!</Card.Title>
+                        <Card.Title className="title-color title-font pl-3 pt-3 pb-1" >Time to <span className="font-title">watchIt</span> !</Card.Title>
                         <Card.Body>
                             <Form>
                                 <Form.Group controlId="formUsername">
@@ -88,8 +88,8 @@ return(
                                     {/*code added here to display validation error*/}{passwordErr && <p>{passwordErr}</p>}
                                 </Form.Group>
                                 <Form.Group className="justify-content-md-center">
-                                        <Button className="mt-2 mr-2" variant="primary" type="submit" onClick={handleSubmit}>Log in</Button>
-                                        <Button className="mt-2" variant="secondary"><Link to='/Users'>Register</Link></Button>
+                                        <Button className="mt-2 mr-2 button-submit" variant="primary" type="submit" onClick={handleSubmit}>Log in</Button>
+                                        <Button className="mt-2 button-second" variant="secondary"><Link to='/Users'>Register</Link></Button>
                                         
                                     
                                 </Form.Group>

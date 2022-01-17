@@ -79,9 +79,9 @@ export function RegistrationView(props) {
 
 
     return (
-        <Row classname="registration-view">
-            <Col><CardGroup><Card>
-                <Card.Title className="title-color pl-3 pt-3 pb-1">Will you watchIt?</Card.Title>
+        <Row classname="registration-view justify-content-md-center">
+            <Col><CardGroup><Card className="register-card">
+                <Card.Title className="pl-3 pt-3 pb-1 title-color">Will you <span className="font-title">watchIt</span> ?</Card.Title>
                 <Card.Body>
                 <Form className="registration-form">
                 <Form.Group>
@@ -124,8 +124,8 @@ export function RegistrationView(props) {
             />
         </Form.Group>
          
-        <Button variant="primary" type="submit" onClick={handleSubmit}>Register</Button>
-        <p className="tm-2">Already registered? <Link to={'/'}>Log in</Link></p>
+        <Button className="button-submit" variant="primary" type="submit" onClick={handleSubmit}>Register</Button>
+        <p className="to-login-text">Already registered? <Link className="link-to-login" to={'/'}>Log in</Link></p>
         
             </Form>
             </Card.Body>

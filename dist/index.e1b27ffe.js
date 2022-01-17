@@ -35890,15 +35890,26 @@ function LoginView(props) {
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Row, {
                 className: "login-row justify-content-md-center",
                 children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Col, {
-                    md: 6,
+                    md: 8,
                     children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.CardGroup, {
                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Card, {
                             className: "login-card",
                             children: [
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Card.Title, {
-                                    className: "title-color pl-3 pt-3 pb-1",
-                                    children: "Time to watchIt!"
-                                }, void 0, false, {
+                                    className: "title-color title-font pl-3 pt-3 pb-1",
+                                    children: [
+                                        "Time to ",
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                            className: "font-title",
+                                            children: "watchIt"
+                                        }, void 0, false, {
+                                            fileName: "src/components/login-view/login-view.jsx",
+                                            lineNumber: 68,
+                                            columnNumber: 96
+                                        }, this),
+                                        " !"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/components/login-view/login-view.jsx",
                                     lineNumber: 68,
                                     columnNumber: 25
@@ -35982,7 +35993,7 @@ function LoginView(props) {
                                                 className: "justify-content-md-center",
                                                 children: [
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Button, {
-                                                        className: "mt-2 mr-2",
+                                                        className: "mt-2 mr-2 button-submit",
                                                         variant: "primary",
                                                         type: "submit",
                                                         onClick: handleSubmit,
@@ -35993,7 +36004,7 @@ function LoginView(props) {
                                                         columnNumber: 41
                                                     }, this),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Button, {
-                                                        className: "mt-2",
+                                                        className: "mt-2 button-second",
                                                         variant: "secondary",
                                                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
                                                             to: "/Users",
@@ -36001,7 +36012,7 @@ function LoginView(props) {
                                                         }, void 0, false, {
                                                             fileName: "src/components/login-view/login-view.jsx",
                                                             lineNumber: 92,
-                                                            columnNumber: 86
+                                                            columnNumber: 100
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "src/components/login-view/login-view.jsx",
@@ -36174,15 +36185,27 @@ function RegistrationView(props) {
         return isReq;
     };
     return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Row, {
-        classname: "registration-view",
+        classname: "registration-view justify-content-md-center",
         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Col, {
             children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.CardGroup, {
                 children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Card, {
+                    className: "register-card",
                     children: [
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Card.Title, {
-                            className: "title-color pl-3 pt-3 pb-1",
-                            children: "Will you watchIt?"
-                        }, void 0, false, {
+                            className: "pl-3 pt-3 pb-1 title-color",
+                            children: [
+                                "Will you ",
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                    className: "font-title",
+                                    children: "watchIt"
+                                }, void 0, false, {
+                                    fileName: "src/components/registration-view/registration-view.jsx",
+                                    lineNumber: 84,
+                                    columnNumber: 77
+                                }, this),
+                                " ?"
+                            ]
+                        }, void 0, true, {
                             fileName: "src/components/registration-view/registration-view.jsx",
                             lineNumber: 84,
                             columnNumber: 17
@@ -36308,6 +36331,7 @@ function RegistrationView(props) {
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Button, {
+                                        className: "button-submit",
                                         variant: "primary",
                                         type: "submit",
                                         onClick: handleSubmit,
@@ -36318,16 +36342,17 @@ function RegistrationView(props) {
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                                        className: "tm-2",
+                                        className: "to-login-text",
                                         children: [
                                             "Already registered? ",
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
+                                                className: "link-to-login",
                                                 to: '/',
                                                 children: "Log in"
                                             }, void 0, false, {
                                                 fileName: "src/components/registration-view/registration-view.jsx",
                                                 lineNumber: 128,
-                                                columnNumber: 49
+                                                columnNumber: 58
                                             }, this)
                                         ]
                                     }, void 0, true, {

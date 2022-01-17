@@ -5,14 +5,15 @@
   }
 
   html {
-    height:100%;
-    background-color: #0530581e !important;
+    
+    background-color: #040e18ad !important;
   }
     
 
 .login-card {
-    border: 1px solid #ffee02 !important;
-    background-color: #fffffff1 !important;
+    border: 1px solid #dbdbdb !important;
+    background-color: #000000e3 !important;
+    color:rgb(175, 175, 175);
 }
 
 .label-font-color {
@@ -25,9 +26,44 @@
 }
 
 .title-color {
-    color: #ff02566b !important;
+    color: #f8f8e68f !important;
     font-weight: 400 !important;
-    margin-bottom: 10% !important;
-    font-size: 18px !important;
-    border-bottom: 1px solid #ffee02;
+    margin-bottom: 8% !important;
+    font-size: 16px !important;
+    border-bottom: 1px solid #ffffff2d;
+    font-family: 'Balsamiq Sans', cursive;
+    border: none !important;
+    margin-left: 24% !important;
+}
+
+.font-title {
+    font-family: 'Knewave', cursive !important;
+    font-size: 26px !important;
+    margin:1%;
+    color: #faf600 !important;
+}
+
+
+.button-submit {
+    color: rgba(255, 255, 255, 0.884);
+    background-color: rgb(255, 230, 0) !important;
+    font-size: 14px !important;
+    padding: 2% !important;
+    font-family: 'Balsamiq Sans', cursive;
+    border: none !important;
+    margin-top: 2% !important;
+    margin-left: 30%;
+}
+
+
+.button-second {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.911);
+    font-size: 14px !important;
+    padding: 2% !important;
+    font-family: 'Balsamiq Sans', cursive;
+    border: none !important;
+    border: none !important;
+    margin-top: 2% !important;
+    margin-left: 30%;
 }
