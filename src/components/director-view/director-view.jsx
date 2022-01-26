@@ -18,24 +18,9 @@ export class DirectorView extends React.Component{
                     <Card.Body>
                         {Director.Bio}
                     </Card.Body>
-                    <Card.Footer><Button variant="primary" onClick={() => { onBackClick(null); }}>Back</Button></Card.Footer>
+                    <Card.Footer><Button variant="primary" onClick={() => { onBackClick(); }}>Back</Button></Card.Footer>
                          </Card>
 
-                <Row>
-                    <Col>
-                    {movies.map((m) => {
-                        if (m.Director && m.Director.Name === Director.Name) {
-                            return (
-                                <Card>
-                                    <Card.Img variant="top" key={m._id} src={m.ImagePath} />
-                                    <Card.Title>
-                                        {m.Title}</Card.Title></Card>
-                                
-                            );
-                        }
-                    })}
-                    </Col>
-                </Row>
                 
    
             </Container>

@@ -74,7 +74,7 @@ export class ProfileView extends React.Component {
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');
 
-        axios.delete(`https://watchitmovieapp.herokuapp.com/users/${user}/Watchlist/${movie.Title}`, {
+        axios.delete(`https://watchitmovieapp.herokuapp.com/users/${user}/Watchlist/${movieId}`, {
             headers: { Authorization: `Bearer ${token}` }
         })
         .then(() => {
@@ -181,7 +181,7 @@ render() {
     const {UsernameErr,PasswordErr,EmailErr,BirthdayErr} = this.state;
 
     const watchlistMovies = movies.filter((movie) => {
-        return Watchlist.includes(movie.Title);
+        return Watchlist.includes(movie._id);
     });
 
     return(
@@ -193,8 +193,8 @@ render() {
             <Row>
                 {watchlistMovies.length > 0 && watchlistMovies.map((movie) =>{
                     return (
-                        <Col key={movie.Title}>
-                            <Link to={`/movies/${movie.Title}`} >
+                        <Col key={movie._id}>
+                            <Link to={`/movies/${movie._id}`} >
                             <Card className="profile-view-card">
                             <Card.Img variant="top" className="mx-auto" src={movie.ImagePath} />
                             <Card.Body>
@@ -203,7 +203,7 @@ render() {
                             </Card.Title>
                             </Card.Body>
                             <Card.Footer>
-                                <Button className="remove-button" onClick={() => this.removeFromWatchlist(movie.Title)}>Remove from Watchlist</Button>
+                                <Button className="remove-button" onClick={() => this.removeFromWatchlist(movie._id)}>Remove from Watchlist</Button>
                             </Card.Footer>
                             </Card>
                             </Link>

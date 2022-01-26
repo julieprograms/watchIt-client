@@ -11,7 +11,7 @@ function VisibilityFilterInput(props) {
     value={props.visibilityFilter}
     placeholder="search"
     className="mt-3 mb-3"
-    style={{'max-width':'66rem'}}
+    style={{maxWidth:'66rem'}}
     />;
 }
 

@@ -9,12 +9,8 @@ import './movie-view.scss';
 
 
 export class MovieView extends React.Component {
-  constructor() {
-    super();
-  }
+  
 
-
- 
   addFavourite() {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
@@ -52,10 +48,10 @@ export class MovieView extends React.Component {
 <Button className= "favourite-button" value={movie._id} onClick={(e) => this.addFavourite(e, movie)}>Add to Watchlist</Button>
       </div>
         <div className="mt-2">
-           <Link to={`/movies/genres/${movie.Genre.Name}`}>
+           <Link to={`/genres/${movie.Genre.Name}`}>
              <Button variant="link">More of this Genre</Button>
              </Link>
-            <Link to={`/movies/Directors/${movie.Director.Name}`}><Button variant="link">More of this Director</Button></Link>
+            <Link to={`/Directors/${movie.Director.Name}`}><Button variant="link">More of this Director</Button></Link>
            
            
            

@@ -32,7 +32,9 @@ constructor(){
 
     //#3 movies state removed
     this.state = {
-      user: null
+      user: null,
+      selectedMovie: null,
+      register: null
     };
 }
 
@@ -144,13 +146,13 @@ render() {
           </Col>
         }}/>
 
-        <Route path="/movies/:Title" render={({ match, history }) => {
+        <Route path="/movies/:movieId" render={({ match, history }) => {
           if (!user) return <Col>
           <LoginView onLoggedIn={user => this.onLoggedIn(user)}/>
           </Col>
           if (movies.length === 0) return <div className="main-view" />
           return <Col sm={12} md={4}>
-            <MovieView movie={movies.find(m => m.Title === match.params.title)} onBackClick={() => history.goBack()} />
+            <MovieView movie={movies.find(m => m._id === match.params.movieId)} onBackClick={() => history.goBack()} />
           </Col>
         }} />
 
@@ -175,7 +177,7 @@ render() {
         }}/>
 
         <Route exact path="/Users/:Username" render={({ history }) => {
-          if (!user) return <LoginView onLoggedIn={(data) => this.onLoggedIn(data)} />
+          if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
           return <><Col><ProfileView user={user} history={history} movies={movies} onBackClick={() => history.goBack()}/></Col></>
         }}/>
       </Row>

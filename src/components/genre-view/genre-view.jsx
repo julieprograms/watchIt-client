@@ -8,11 +8,11 @@ import './genre-view.scss';
 export class GenreView extends React.Component{
     
     render() {
-        const { Genre, onBackClick, movies} = this.props;
+        const { Genre, onBackClick} = this.props;
 
         return (
-            <Container>
-                <Card>
+            <Container className="genre-view mt-5">
+                <Card className="genre-card mt-5">
                     <Card.Title>{Genre.Name}</Card.Title>
                     <Card.Body>
                         {Genre.Description}
@@ -20,23 +20,7 @@ export class GenreView extends React.Component{
                     <Card.Footer><Button variant="primary" onClick={() => { onBackClick(); }}>Back</Button></Card.Footer>
                          </Card>
 
-                <Row>
-                    <Col>
-                    {movies.map((m) => {
-                        if (m.Genre && m.Genre.Name === Genre.Name) {
-                            return (
-                                <Card>
-                                    <Card.Img variant="top" key={m._id} src={m.ImagePath} />
-                                    <Card.Title>
-                                        {m.Title}</Card.Title></Card>
-                                
-                            );
-                        }
-                    })}
-                    </Col>
-                </Row>
-                
-   
+        
             </Container>
         )
     }

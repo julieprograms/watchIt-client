@@ -79,7 +79,7 @@ export function RegistrationView(props) {
 
 
     return (
-        <Row classname="registration-view justify-content-md-center">
+        <Row className="registration-view justify-content-md-center">
             <Col><CardGroup><Card className="register-card">
                 <Card.Title className="pl-3 pt-3 pb-1 title-color">Will you <span className="font-title">watchIt</span> ?</Card.Title>
                 <Card.Body>
