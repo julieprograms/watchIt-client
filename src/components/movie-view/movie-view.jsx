@@ -13,7 +13,7 @@ export class MovieView extends React.Component {
     const token = localStorage.getItem("token");
     const user = localStorage.getItem("user");
     axios
-      .post(`https://watchitmovieapp.herokuapp.com/Users/${user}/movies/${this.props.movie._id}`, {}, {
+      .post(`https://watchitmovieapp.herokuapp.com/Users/${user}/Watchlist/${this.props.movie._id}`, {}, {
         headers: { Authorization: `Bearer ${token}` }
       })
         .then(response => {
@@ -49,10 +49,10 @@ render() {
         </Button>
       </div>
       <h5 className="mt-5">More About {movie.Title}</h5>
-      <Link to={`/directors/${movie.Director.Name}`}>
+      <Link to={`/movies/Directors/${movie.Director.Name}`}>
         <Button variant="link">Director</Button>
       </Link>
-      <Link to={`/genres/${movie.Genre.Name}`}>
+      <Link to={`/movies/Genres/${movie.Genre.Name}`}>
         <Button variant="link">Genre</Button>
       </Link>
       <Button className="mt-4" onClick={() => { onBackClick(null); }}>Back</Button>

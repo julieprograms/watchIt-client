@@ -8,40 +8,13 @@ import { Link } from 'react-router-dom';
 import './registration-view.scss';
 
 export function RegistrationView(props) {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [email, setEmail] = useState('');
-    const [birthday, setBirthday] = useState('');
-
-    const [usernameErr, setUsernameErr] = useState({});
-    const [passwordErr, setPasswordErr] = useState({});
-    const [emailErr,setEmailErr] = useState({});
-    const [birthdayErr, setBirthdayErr] = useState({});
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [birthdate, setBirthdate] = useState("");
   
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const isReq = validate();
-        if(isReq){
-            axios.post('https://watchitmovieapp.herokuapp.com/users', {
-                Username: username,
-                Password: password,
-                Email: email,
-                Birthday: birthday
-            })
-            .then(response => {
-                const data = response.data;
-                Alert('Registration successful! Please login!');
-                window.open('/', '_self');
-                
-            })
-            .catch(e => {
-                console.log(error);
-                alert('unable to register');
-            });
-        }
-    };
-    
-    const validate = () => {
+  
+   /* const validate = () => {
         
         let isReq = true;
 
@@ -73,7 +46,29 @@ export function RegistrationView(props) {
     setEmailErr(emailErr);
     setBirthdayErr(birthdayErr);
     return isReq;
-}
+}*/
+   
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+            axios.post('https://watchitmovieapp.herokuapp.com/users', {
+                Username: username,
+      Password: password,
+      Email: email,
+      Birthday: birthdate
+    })
+    .then(response => {
+      const data = response.data;
+      console.log(data);
+      window.open('/', '_self'); // the second argument '_self' is necessary so that the page will open in the current tab
+    })
+    .catch(e => {
+      console.log('error registering the user')
+    });
+  };
+
+    
+    
 
 
 
