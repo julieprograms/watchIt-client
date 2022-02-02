@@ -8,16 +8,16 @@ import './director-view.scss';
 export class DirectorView extends React.Component{
     
     render() {
-        const { Director, onBackClick} = this.props;
-        console.log(director);
+        const { director, onBackClick} = this.props;
+        console.log(this.props);
 
         return (
             <Container>
                 <Card>
-                    <Card.Title>{Director.Name}</Card.Title>
-                    <Card.Subtitle className="mb-2">{Director.Birthdate} - {Director.Deathdate}</Card.Subtitle>
+                    <Card.Title>{director.Name}</Card.Title>
+                    <Card.Subtitle className="mb-2">{director.Birthdate} - {director.Deathdate}</Card.Subtitle>
                     <Card.Body>
-                        {Director.Bio}
+                        {director.Bio}
                     </Card.Body>
                     <Card.Footer><Button variant="primary" onClick={() => { onBackClick(); }}>Back</Button></Card.Footer>
                          </Card>

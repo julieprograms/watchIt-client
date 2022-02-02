@@ -26,11 +26,12 @@ export class MovieView extends React.Component {
 
 render() {
   const { movie, onBackClick } = this.props;
+  console.log('movie-->', movie)
 
   return(
     <div className="movie-view mb-5">
       <div className="movie-poster mt-3">
-        <img src={movie.ImagePath} className="movie-img" />
+        <img src={movie.ImagePath}  />
       </div>
       <div className="movie-title mt-3">
         <span className="label h1">Title: </span>
@@ -49,10 +50,10 @@ render() {
         </Button>
       </div>
       <h5 className="mt-5">More About {movie.Title}</h5>
-      <Link to={`/movies/Directors/${movie.Director.Name}`}>
+      <Link to={`/directors/${movie.Director.Name}`}>
         <Button variant="link">Director</Button>
       </Link>
-      <Link to={`/movies/Genres/${movie.Genre.Name}`}>
+      <Link to={`/genres/${movie.Genre.Name}`}>
         <Button variant="link">Genre</Button>
       </Link>
       <Button className="mt-4" onClick={() => { onBackClick(null); }}>Back</Button>

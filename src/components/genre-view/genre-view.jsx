@@ -8,14 +8,14 @@ import './genre-view.scss';
 export class GenreView extends React.Component{
     
     render() {
-        const { Genre, onBackClick} = this.props;
+        const { genre, onBackClick} = this.props;
 
         return (
             <Container className="genre-view mt-5">
                 <Card className="genre-card mt-5">
-                    <Card.Title>{Genre.Name}</Card.Title>
+                    <Card.Title>{genre.Name}</Card.Title>
                     <Card.Body>
-                        {Genre.Description}
+                        {genre.Description}
                     </Card.Body>
                     <Card.Footer><Button variant="primary" onClick={() => { onBackClick(); }}>Back</Button></Card.Footer>
                          </Card>

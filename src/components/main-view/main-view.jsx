@@ -156,7 +156,7 @@ render() {
           </Col>
         }} />
 
-        <Route path="/movies/Directors/:Name" render={({ match, history }) => {
+        <Route path="/directors/:name" render={({ match, history }) => {
           if (!user) return <Col>
           <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
           </Col>
@@ -166,7 +166,7 @@ render() {
           </Col>
         }} />
 
-        <Route path="/movies/Genres/:Name" render={({ match, history }) => {
+        <Route path="/genres/:name" render={({ match, history }) => {
           if (!user) return <Col>
           <LoginView onLoggedIn={user => this.onLoggedIn(user)}/>
           </Col>
