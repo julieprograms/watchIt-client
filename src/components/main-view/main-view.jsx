@@ -139,7 +139,7 @@ render() {
           
         }} />
 
-        <Route exact path="/Users" render={() => {
+        <Route exact path="/users" render={() => {
           if (user) return <Redirect to="/" />
           return <Col lg={8} md={8} sm={12}>
           <RegistrationView />
@@ -176,7 +176,7 @@ render() {
           </Col>
         }}/>
 
-        <Route path="/Users/:Username" render={({ history }) => {
+        <Route path="/users/:username" render={({ history }) => {
           if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
           return <><Col><ProfileView user={user} history={history} movies={movies} onBackClick={() => history.goBack()}/></Col></>
         }}/>

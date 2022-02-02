@@ -26755,7 +26755,7 @@ class MainView extends _reactDefault.default.Component {
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
                             exact: true,
-                            path: "/Users",
+                            path: "/users",
                             render: ()=>{
                                 if (user1) return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Redirect, {
                                     to: "/"
@@ -26850,7 +26850,7 @@ class MainView extends _reactDefault.default.Component {
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
-                            path: "/Users/:Username",
+                            path: "/users/:username",
                             render: ({ history  })=>{
                                 if (!user1) return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_loginView.LoginView, {
                                     onLoggedIn: (user)=>this.onLoggedIn(user)
@@ -36413,7 +36413,7 @@ class MovieView extends _reactDefault.default.Component {
     addFavorite() {
         const token = localStorage.getItem("token");
         const user = localStorage.getItem("user");
-        _axiosDefault.default.post(`https://watchitmovieapp.herokuapp.com/Users/${user}/Watchlist/${this.props.movie._id}`, {
+        _axiosDefault.default.post(`https://watchitmovieapp.herokuapp.com/users/${user}/watchlist/${this.props.movie._id}`, {
         }, {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -36839,7 +36839,7 @@ class ProfileView extends _reactDefault.default.Component {
         e.preventDefault();
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');
-        _axiosDefault.default.delete(`https://watchitmovieapp.herokuapp.com/users/${user}/Watchlist/${movieId}`, {
+        _axiosDefault.default.delete(`https://watchitmovieapp.herokuapp.com/users/${user}/watchlist/${movieId}`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
