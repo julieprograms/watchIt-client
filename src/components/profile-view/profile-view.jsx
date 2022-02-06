@@ -52,8 +52,8 @@ export class ProfileView extends React.Component {
 
 
       getUser (token) {
-          const user = localStorage.getItem('user');
-          axios.get(`https://watchitmovieapp.herokuapp.com/users/${user}`, {
+          let url = 'https://watchitmovieapp.herokuapp.com/users/' + localStorage.getItem('user');
+          axios.get( url, {
             headers: { Authorization: `Bearer ${token}`}
         })
             .then(response => {
@@ -69,7 +69,7 @@ export class ProfileView extends React.Component {
             });
     };
 
-    removeFromWatchlist(e, movie) {
+    removeFromWatchlist(e, movieId) {
         e.preventDefault();
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');

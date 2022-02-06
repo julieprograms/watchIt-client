@@ -50,7 +50,7 @@ componentDidMount() {
 
 
 getMovies(token) {
-  axios.get('https://watchitmovieapp.herokuapp.com/movies/', {
+  axios.get('https://watchitmovieapp.herokuapp.com/movies', {
     headers: {Authorization: `Bearer ${token}`}
   })
   .then(response => {
@@ -176,7 +176,7 @@ render() {
           </Col>
         }}/>
 
-        <Route path="/users/:username" render={({ history }) => {
+        <Route path="/users/:Username" render={({ history }) => {
           if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
           return <><Col><ProfileView user={user} history={history} movies={movies} onBackClick={() => history.goBack()}/></Col></>
         }}/>
