@@ -192,11 +192,17 @@ render() {
 
             <Row>
                 {watchlistMovies.length > 0 && watchlistMovies.map((movie) =>{
+
+if (
+    movie._id ===
+    watchlistMovies.find((fav) => fav === movie._id)
+  ) {
+
                     return (
                         <Col key={movie._id}>
                             <Link to={`/movies/${movie._id}`} >
                             <Card className="profile-view-card">
-                            <Card.Img variant="top" className="mx-auto" src={movie.ImagePath} />
+                            <Card.Img variant="top" className="mx-auto" src={movie.ImagePath} crossOrigin="true" />
                             <Card.Body>
                             <Card.Title>
                             {movie.Title}
@@ -210,7 +216,8 @@ render() {
 
                             
                         </Col>
-                    );
+
+                    )};
                 })}
             </Row>
 

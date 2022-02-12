@@ -13,11 +13,12 @@ export class MovieView extends React.Component {
     const token = localStorage.getItem("token");
     const user = localStorage.getItem("user");
     axios
-      .post(`https://watchitmovieapp.herokuapp.com/users/${user}/watchlist/${this.props.movie._id}`, {}, {
-        headers: { Authorization: `Bearer ${token}` }
+      .post(`https://watchitmovieapp.herokuapp.com/users/${user}/Watchlist/${this.props.movie._id}`, {}, {
+        headers: { Authorization: `Bearer ${token}` },
+        method: 'POST',
       })
         .then(response => {
-          alert(`Added to Favorites List`)
+          alert(`Added to Watchlist`)
         })
         .catch(function (error) {
           console.log(error);
@@ -31,7 +32,8 @@ render() {
   return(
     <div className="movie-view mb-5">
       <div className="movie-poster mt-3">
-        <img src={movie.ImagePath}  />
+        <img src={movie.ImagePath} 
+        crossOrigin="true" />
       </div>
       <div className="movie-title mt-3">
         <span className="label h1">Title: </span>

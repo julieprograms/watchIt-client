@@ -176,9 +176,9 @@ render() {
           </Col>
         }}/>
 
-        <Route path="/users/:Username" render={({ history }) => {
+        <Route path="/users/:username" render={({ history }) => {
           if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
-          return <><Col><ProfileView user={user} history={history} movies={movies} onBackClick={() => history.goBack()}/></Col></>
+          return <><Col><ProfileView user={user} setUser={(user) => this.setUser(user)} history={history} movies={movies} onBackClick={() => history.goBack()}/></Col></>
         }}/>
       </Row>
     </Router>
