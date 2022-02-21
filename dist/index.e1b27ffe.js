@@ -36415,7 +36415,7 @@ class MovieView extends _reactDefault.default.Component {
     addFavorite() {
         const token = localStorage.getItem("token");
         const user = localStorage.getItem("user");
-        _axiosDefault.default.post(`https://watchitmovieapp.herokuapp.com/users/${user}/Watchlist/${this.props.movie._id}`, {
+        _axiosDefault.default.post(`https://watchitmovieapp.herokuapp.com/users/${user}/movies/${this.props.movie._id}`, {
         }, {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -36843,7 +36843,7 @@ class ProfileView extends _reactDefault.default.Component {
         e.preventDefault();
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');
-        _axiosDefault.default.delete(`https://watchitmovieapp.herokuapp.com/users/${user}/watchlist/${movieId}`, {
+        _axiosDefault.default.delete(`https://watchitmovieapp.herokuapp.com/users/${user}/movies/${movieId}`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
