@@ -36980,8 +36980,8 @@ class ProfileView extends _reactDefault.default.Component {
                     columnNumber: 40
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Row, {
-                    children: watchlistMovies.length > 0 && watchlistMovies.map((movie)=>{
-                        if (movie._id === watchlistMovies.find((fav)=>fav === movie._id
+                    children: watchlistMovies.length && watchlistMovies.map((movie)=>{
+                        if (movie._id === movies.find((fav)=>fav === movie._id
                         )) return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Col, {
                             children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Link, {
                                 to: `/movies/${movie._id}`,

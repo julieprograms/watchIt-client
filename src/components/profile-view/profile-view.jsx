@@ -70,7 +70,7 @@ export class ProfileView extends React.Component {
     };
 
     removeFromWatchlist(e, movieId) {
-        e.preventDefault();
+        //e.preventDefault();
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');
 
@@ -188,37 +188,19 @@ render() {
         <Container className="profile-view">
             <h1>Your Profile</h1>
             <h2>Your Watchlist</h2>
-            {Watchlist.length === 0 && <p>...is still empty</p>}
 
             <Row>
-                {watchlistMovies.length > 0 && watchlistMovies.map((movie) =>{
-
-if (
-    movie._id ===
-    watchlistMovies.find((fav) => fav === movie._id)
-  ) {
-
-                    return (
-                        <Col key={movie._id}>
-                            <Link to={`/movies/${movie._id}`} >
-                            <Card className="profile-view-card">
-                            <Card.Img variant="top" className="mx-auto" src={movie.ImagePath} crossOrigin="true" />
-                            <Card.Body>
-                            <Card.Title>
-                            {movie.Title}
-                            </Card.Title>
-                            </Card.Body>
-                            <Card.Footer>
-                                <Button className="remove-button" onClick={() => this.removeFromWatchlist(movie._id)}>Remove from Watchlist</Button>
-                            </Card.Footer>
-                            </Card>
-                            </Link>
-
-                            
+                {watchlistMovies.length && watchlistMovies.map((movie) =>(
+   
+                        <Col sm={6} md={4} lg={4} key={movie._id}>
+                            <div className="watchlistDiv">
+                                <MovieCard movie={movie} />
+                                <Button className="deleteWatchlist" variant="danger" onClick={() => {this.removeFromWatchlist(movie_id)}} />
+                            </div>       
                         </Col>
-
-                    )};
-                })}
+                ))
+};       
+                
             </Row>
 
             <h2>Update your information</h2>
