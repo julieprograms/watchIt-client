@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Form, Button, CardGroup, Card, Col, Row, Alert } from 'react-bootstrap';
+import { Form, Button, CardGroup, Card, Col, Row, Alert, Container } from 'react-bootstrap';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -74,6 +74,7 @@ const handleSubmit = (e) => {
 
 
     return (
+      
         <Row className="registration-view justify-content-md-center">
             <Col><CardGroup><Card className="register-card">
                 <Card.Title className="pl-3 pt-3 pb-1 title-color">Will you <span className="font-title">watchIt</span> ?</Card.Title>
@@ -114,7 +115,7 @@ const handleSubmit = (e) => {
             <Form.Label className="label-font-color mt-3 mb-1">Birthday</Form.Label>
             <Form.Control className="input-font mb-3" type="date" 
             name="birthday"
-            onChange={(e) => setBirthday(e.target.value)} 
+            onChange={(e) => setBirthdate(e.target.value)} 
             required 
             />
         </Form.Group>
@@ -129,7 +130,7 @@ const handleSubmit = (e) => {
             </Col>
             
         </Row>
-        
+     
     )
 }
 

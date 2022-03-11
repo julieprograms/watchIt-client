@@ -60,7 +60,7 @@ axios.post('https://watchitmovieapp.herokuapp.com/login', {
 };
 
 return(
-    <Container className="login-background">
+    <Container className="login-background ">
         <Row className="login-row justify-content-md-center">
             <Col md={8}>
                 <CardGroup>

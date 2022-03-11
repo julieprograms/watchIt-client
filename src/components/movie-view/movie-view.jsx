@@ -27,38 +27,35 @@ export class MovieView extends React.Component {
 
 render() {
   const { movie, onBackClick } = this.props;
-  console.log('movie-->', movie)
 
   return(
-    <div className="movie-view mb-5">
-      <div className="movie-poster mt-3">
+    <div className="movie-view details-bg mt-5 mb-5 justify-content-md-center">
+      <div className="mt-3">
         <img src={movie.ImagePath} 
-        crossOrigin="true" />
+        crossOrigin="true" className="movie-poster"/>
       </div>
-      <div className="movie-title mt-3">
-        <span className="label h1">Title: </span>
+      <div className="movie-title mt-3 mb-3">
         <span className="value h1">{movie.Title}</span>
       </div>
       <div className="movie-description mt-2">
-        <span className="label h5">Description: </span>
         <span className="value">{movie.Description}</span>
       </div>
       <div className="mt-3">
         <Button
-                className="fav-btn"
+               
                 value={movie._id} onClick={(e) => this.addFavorite(e, movie)}
               >
-                + Add To Favorites
+                Add To Favorites
         </Button>
       </div>
       <h5 className="mt-5">More About {movie.Title}</h5>
       <Link to={`/directors/${movie.Director.Name}`}>
-        <Button variant="link">Director</Button>
+        <Button variant="primary" className="mr-3">Director</Button>
       </Link>
       <Link to={`/genres/${movie.Genre.Name}`}>
-        <Button variant="link">Genre</Button>
+        <Button variant="primary">Genre</Button>
       </Link>
-      <Button className="mt-4" onClick={() => { onBackClick(null); }}>Back</Button>
+      <Button variant="secondary" className="mt-3" onClick={() => { onBackClick(null); }}>Back</Button>
     </div>
   ); 
 }

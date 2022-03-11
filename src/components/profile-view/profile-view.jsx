@@ -185,9 +185,9 @@ render() {
     });
 
     return(
-        <Container className="profile-view">
-            <h1>Your Profile</h1>
-            <h2>Your Watchlist</h2>
+        <Container className="profile-view mt-5">
+            <h1 className="profile-header">Profile</h1>
+            <h2 className="profile-card-title">Your Watchlist</h2>
 
             <Row>
                 {watchlistMovies.length && watchlistMovies.map((movie) =>(
@@ -203,7 +203,7 @@ render() {
                 
             </Row>
 
-            <h2>Update your information</h2>
+            <h2 className="profile-card-title mt-5">Update your information</h2>
 
             <Form
                                 className="update-form"
@@ -260,8 +260,8 @@ render() {
                                 </Form.Group>
                                 <br />
                                 <div className="bt">
-                                    <Button variant="primary" type="submit" onClick={this.updateUser} >Update User</Button>
-                                    <Button className="delete-button" variant="danger" onClick={this.deleteUser} >Delete User </Button>
+                                    <Button variant="primary" className="submit-button" type="submit" onClick={this.updateUser} >Update User</Button>
+                                    <Button className="delete-button ml-2" variant="danger" onClick={this.deleteUser} >Delete User </Button>
                                 </div>
                             </Form>
         </Container>

@@ -12,9 +12,9 @@ export class DirectorView extends React.Component{
         console.log(this.props);
 
         return (
-            <Container>
-                <Card>
-                    <Card.Title>{director.Name}</Card.Title>
+            <Container className="director-view mt-5">
+                <Card className="black-bg mt-5">
+                    <Card.Title className="director-card-title mb-2">{director.Name}</Card.Title>
                     <Card.Subtitle className="mb-2">{director.Birthdate} - {director.Deathdate}</Card.Subtitle>
                     <Card.Body>
                         {director.Bio}

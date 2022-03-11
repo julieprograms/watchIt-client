@@ -1,12 +1,4 @@
 
-html {
-    
-  background-color:rgba(107, 14, 65, 0.068) !important;
-    margin-top: 4%;
-    margin-bottom: 5%;
-  
-  }
-  
 
 .border-main{
     border: 1px solid rgba(24, 20, 20, 0.911) !important;
@@ -40,8 +32,7 @@ html {
   font-family: 'Balsamiq Sans', cursive;
 }
 
-.card-header {
-  
+.card-header { 
   min-width: 100%;
   margin-top: -17%;
 }
@@ -68,4 +59,6 @@ html {
   font-family: 'Rubik', sans-serif;
   font-family: 'Balsamiq Sans', cursive;
   font-size: 12px !important;
+  margin-right: 10px;
+  margin-left: 10px;
 }
