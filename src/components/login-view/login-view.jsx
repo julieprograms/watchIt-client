@@ -62,7 +62,7 @@ axios.post('https://watchitmovieapp.herokuapp.com/login', {
 return(
     <Container className="login-background ">
         <Row className="login-row justify-content-md-center">
-            <Col md={8}>
+            <Col md={6}>
                 <CardGroup>
                     <Card className="login-card" >
                         <Card.Title className="title-color title-font pl-3 pt-3 pb-1" >Time to <span className="font-title">watchIt</span> !</Card.Title>
@@ -89,7 +89,7 @@ return(
                                 </Form.Group>
                                 <Form.Group className="justify-content-md-center">
                                         <Button className="mt-2 mr-2 button-submit" variant="primary" type="submit" onClick={handleSubmit}>Log in</Button>
-                                        <Button className="mt-2 button-second" variant="secondary"><Link to='/Users'>Register</Link></Button>
+                                        <Button className="mt-2 button-second" variant="secondary"><Link className="login-link" to='/Users'>Register</Link></Button>
                                         
                                     
                                 </Form.Group>

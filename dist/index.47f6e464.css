@@ -15,6 +15,7 @@
   border: 1px solid #dbdbdb !important;
   background-color: #000000e3 !important;
   color: #afafaf;
+  margin-top: 50px;
 }
 
 .title-color {
@@ -57,6 +58,10 @@
   margin-top: 2% !important;
   margin-left: 30%;
 }
+
+.login-link {
+  color: #e26906 !important;
+}
 .title-color {
   color: #f8f8e68f !important;
   font-weight: 400 !important;
@@ -69,11 +74,12 @@
 }
 
 .register-card {
-  border: 1px solid #ffffff2d !important;
+  border: 1px solid #dbdbdb !important;
   background-color: #000000e3 !important;
   color: #afafaf;
   font-size: 12px;
   font-family: "Balsamiq Sans", cursive;
+  margin-top: 50px;
 }
 
 .label-font-color {
@@ -121,10 +127,6 @@
   color: #faf600 !important;
   font-family: "Knewave", cursive !important;
 }
-
-.registration-view {
-  max-width: 500px !important;
-}
 .movie-title {
   color: #fdcf01 !important;
   font-family: "Knewave", cursive;
@@ -154,12 +156,20 @@
   margin-left: 10px;
   margin-top: 10px;
 }
+
+.director-card {
+  margin-top: 100px !important;
+}
 .genre-card-title {
   color: #fdcf01 !important;
   font-size: 23px !important;
   font-family: "Knewave", cursive !important;
   margin-left: 10px;
   margin-top: 10px;
+}
+
+.genre-card {
+  margin-top: 100px !important;
 }
 .border-main {
   border: 1px solid rgba(24, 20, 20, 0.911) !important;
@@ -235,21 +245,23 @@
   margin-bottom: 30px !important;
 }
 .btn-primary {
-  background-color: #1588cad5 !important;
+  background-color: #ca5715d5 !important;
   color: white !important;
-  border-color: #1588cad5 !important;
+  border-color: #ca5715d5 !important;
   width: 10em;
 }
 
 .btn-secondary {
   width: 10em;
-  background-color: #4876915d !important;
-  border-color: #4876915d !important;
-  color: black !important;
+  background-color: #ca57154d !important;
+  border-color: #ca57154d !important;
+  color: #ff5e00 !important;
 }
 .app-container {
-  min-width: 100% !important;
-  min-height: 100% !important;
+  background-color: rgba(19, 14, 16, 0.897) !important;
+}
+
+html {
   background-color: rgba(19, 14, 16, 0.897) !important;
 }
 /*# sourceMappingURL=index.47f6e464.css.map */

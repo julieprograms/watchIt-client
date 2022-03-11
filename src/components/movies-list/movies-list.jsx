@@ -27,7 +27,7 @@ function MoviesList(props) {
     </Col>
     {filteredMovies.map(m => (
         <Col sm={12} md={6} lg={4} key={m._id}>
-            <MovieCard movie={m}/>
+            <MovieCard movie={m} />
         </Col>))}
     
     

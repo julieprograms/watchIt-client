@@ -135,13 +135,13 @@ render() {
           </Col>
           if (movies.length === 0) return <div className="main-view" />
           // #6
-          return <MoviesList movies={movies}/>
+          return <MoviesList movies={movies} />
           
         }} />
 
         <Route exact path="/users" render={() => {
           if (user) return <Redirect to="/" />
-          return <Col lg={8} md={8} sm={12}>
+          return <Col >
           <RegistrationView />
           </Col>
         }}/>
@@ -151,7 +151,7 @@ render() {
           <LoginView onLoggedIn={user => this.onLoggedIn(user)}/>
           </Col>
           if (movies.length === 0) return <div className="main-view" />
-          return <Col sm={12} md={4}>
+          return <Col sm={12} md={6}>
             <MovieView movie={movies.find(m => m._id === match.params.movieId)} onBackClick={() => history.goBack()} />
           </Col>
         }} />
@@ -161,7 +161,7 @@ render() {
           <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
           </Col>
           if (movies.length === 0) return <div className="main-view" />
-          return <Col md={8}>
+          return <Col md={10}>
             <DirectorView director={movies.find(m => m.Director.Name === match.params.name).Director} onBackClick={() => history.goBack()} />
           </Col>
         }} />
@@ -171,7 +171,7 @@ render() {
           <LoginView onLoggedIn={user => this.onLoggedIn(user)}/>
           </Col>
           if (movies.length === 0) return <div className="main-view" />
-          return <Col md={8}>
+          return <Col md={10}>
             <GenreView genre={movies.find(m => m.Genre.Name === match.params.name).Genre} onBackClick={() => history.goBack()} />
           </Col>
         }}/>

@@ -42,20 +42,19 @@ render() {
       </div>
       <div className="mt-3">
         <Button
-               
                 value={movie._id} onClick={(e) => this.addFavorite(e, movie)}
               >
-                Add To Favorites
+                Add To Watchlist
         </Button>
       </div>
-      <h5 className="mt-5">More About {movie.Title}</h5>
+      <h5 className="mt-5 mb-3">More About {movie.Title}</h5>
       <Link to={`/directors/${movie.Director.Name}`}>
         <Button variant="primary" className="mr-3">Director</Button>
       </Link>
       <Link to={`/genres/${movie.Genre.Name}`}>
         <Button variant="primary">Genre</Button>
       </Link>
-      <Button variant="secondary" className="mt-3" onClick={() => { onBackClick(null); }}>Back</Button>
+      <Button variant="secondary" className="ml-3" onClick={() => { onBackClick(null); }}>Back</Button>
     </div>
   ); 
 }

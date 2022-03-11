@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import './movie-card.scss';
 
 export class MovieCard extends React.Component {
+
+
   render() {
     const { movie } = this.props;
 
@@ -21,9 +23,11 @@ export class MovieCard extends React.Component {
         </Card.Body>
         <Card.Footer className="card-footer">
           <Link to={`/movies/${movie._id}`}>
-            <Button variant="warning" className="center movie-card-btn">Open</Button>
-            
+            <Button variant="warning" className="center movie-card-btn">Open</Button> 
           </Link>
+
+
+
        </Card.Footer>
       </Card>
 

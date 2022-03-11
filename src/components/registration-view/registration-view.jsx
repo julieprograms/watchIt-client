@@ -68,69 +68,76 @@ const handleSubmit = (e) => {
   };
 
     
-    
-
-
-
+  
 
     return (
-      
+      <Container className="registration-container">
         <Row className="registration-view justify-content-md-center">
-            <Col><CardGroup><Card className="register-card">
-                <Card.Title className="pl-3 pt-3 pb-1 title-color">Will you <span className="font-title">watchIt</span> ?</Card.Title>
-                <Card.Body>
-                <Form className="registration-form">
-                <Form.Group>
-                    <Form.Label className="label-font-color mt-3 mb-1">Username</Form.Label>
-                    <Form.Control className="input-font" type="text" 
-                    value={username} 
-                    onChange={e => setUsername(e.target.value)} 
-                    required 
-                    placeholder="Enter a username"
-                    />
-                    
-        </Form.Group>
-        <Form.Group>
-            <Form.Label className="label-font-color mt-3 mb-1">Password</Form.Label>
-            <Form.Control className="input-font" type="text" 
-            value={password} 
-            onChange={e => setPassword(e.target.value)} 
-            required 
-            minLength="6" 
-            placeholder="Enter a password"
-            />
-       
-        </Form.Group>
-        <Form.Group>
-            <Form.Label className="label-font-color mt-3 mb-1">Email</Form.Label>
-            <Form.Control className="input-font" type="email" 
-            value={email} 
-            onChange={e => setEmail(e.target.value)} 
-            required 
-            placeholder="Enter Email"
-            />
-            
-            </Form.Group>
-        <Form.Group>
-            <Form.Label className="label-font-color mt-3 mb-1">Birthday</Form.Label>
-            <Form.Control className="input-font mb-3" type="date" 
-            name="birthday"
-            onChange={(e) => setBirthdate(e.target.value)} 
-            required 
-            />
-        </Form.Group>
+            <Col md={6}>
+                <CardGroup>
+                    <Card className="register-card">
+                    <Card.Title className="pl-3 pt-3 pb-1 title-color">Will you <span className="font-title">watchIt</span> ?</Card.Title>
+                    <Card.Body>
+                    <Form className="registration-form">
+                        <Form.Group>
+                        <Form.Label className="label-font-color mt-3 mb-1">Username</Form.Label>
+                        <Form.Control className="input-font" type="text" 
+                        value={username} 
+                        onChange={e => setUsername(e.target.value)} 
+                        required 
+                        placeholder="Enter a username"
+                        />
+                        </Form.Group>
+
+                        <Form.Group>
+                        <Form.Label className="label-font-color mt-3 mb-1">Password</Form.Label>
+                        <Form.Control className="input-font" type="text" 
+                        value={password} 
+                        onChange={e => setPassword(e.target.value)} 
+                        required 
+                        minLength="6" 
+                        placeholder="Enter a password"
+                        />
+                        </Form.Group>
+
+                        <Form.Group>
+                        <Form.Label className="label-font-color mt-3 mb-1">Email</Form.Label>
+                        <Form.Control className="input-font" type="email" 
+                        value={email} 
+                        onChange={e => setEmail(e.target.value)} 
+                        required 
+                        placeholder="Enter Email"
+                        />
+                        </Form.Group>
+
+                        <Form.Group>
+                        <Form.Label className="label-font-color mt-3 mb-1">Birthday</Form.Label>
+                        <Form.Control className="input-font mb-3" type="date" 
+                        name="birthday"
+                        onChange={(e) => setBirthdate(e.target.value)} 
+                        required 
+                        />
+                        </Form.Group>
          
-        <Button className="button-submit" variant="primary" type="submit" onClick={handleSubmit}>Register</Button>
-        <p className="to-login-text">Already registered? <Link className="link-to-login" to={'/'}>Log in</Link></p>
+                    <Button 
+                    className="button-submit" 
+                    variant="primary" 
+                    type="submit" 
+                    onClick={handleSubmit}>Register
+                    </Button>
+
+                    <p className="to-login-text">Already registered?
+                    <Link className="link-to-login" to={'/'}>Log in
+                    </Link>
+                    </p>
         
-            </Form>
-            </Card.Body>
-            </Card>
-            </CardGroup>
-            </Col>
-            
+                    </Form>
+                    </Card.Body>
+                    </Card>
+                </CardGroup>
+            </Col>    
         </Row>
-     
+     </Container>
     )
 }
 
