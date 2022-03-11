@@ -1,8 +1,11 @@
 # watchIt-client
+
+# start
+get it running by using the command: $ npm run start
  
 # Objective
 
-Using React, to build the client-side for an application called watchIt based on its existing server-side code (REST API and database).
+Using React to build the client-side for an application called watchIt based on its existing server-side code (REST API and database).
 
 
 # Essential Views and Features
