@@ -69,7 +69,7 @@ export class ProfileView extends React.Component {
             });
     };
 
-    removeFromWatchlist(e, movieId) {
+    removeFromWatchlist(movieId) {
         //e.preventDefault();
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');
@@ -193,13 +193,13 @@ render() {
                 {watchlistMovies.length && watchlistMovies.map((movie) =>(
    
                         <Col sm={6} md={4} lg={4} key={movie._id}>
-                            <div className="watchlistDiv">
-                                <MovieCard movie={movie} />
-                                <Button className="deleteWatchlist" variant="danger" onClick={() => {this.removeFromWatchlist(movie_id)}} />
-                            </div>       
+                        <div className="watchlistDiv">
+                            <MovieCard movie={movie} />
+                            <Button className="deleteWatchlist" variant="danger" onClick={() => { this.removeFromWatchlist(movie_id) }} >Remove </Button>
+                        </div>       
                         </Col>
                 ))
-};       
+                }       
                 
             </Row>
 
