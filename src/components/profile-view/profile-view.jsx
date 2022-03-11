@@ -195,7 +195,7 @@ render() {
                         <Col sm={6} md={4} lg={4} key={movie._id}>
                         <div className="watchlistDiv">
                             <MovieCard movie={movie} />
-                            <Button className="deleteWatchlist" variant="danger" onClick={() => { this.removeFromWatchlist(movie_id) }} >Remove </Button>
+                            <Button className="deleteWatchlist" variant="danger" onClick={() => { this.removeFromWatchlist(movie_id) }} ></Button>
                         </div>       
                         </Col>
                 ))

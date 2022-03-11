@@ -36830,7 +36830,7 @@ class ProfileView extends _reactDefault.default.Component {
             console.log(error);
         });
     }
-    removeFromWatchlist(e, movieId) {
+    removeFromWatchlist(movieId) {
         //e.preventDefault();
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');
@@ -36966,47 +36966,44 @@ class ProfileView extends _reactDefault.default.Component {
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Row, {
-                    children: [
-                        watchlistMovies.length && watchlistMovies.map((movie)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Col, {
-                                sm: 6,
-                                md: 4,
-                                lg: 4,
-                                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                    className: "watchlistDiv",
-                                    children: [
-                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_movieCard.MovieCard, {
-                                            movie: movie
-                                        }, void 0, false, {
-                                            fileName: "src/components/profile-view/profile-view.jsx",
-                                            lineNumber: 197,
-                                            columnNumber: 33
-                                        }, this),
-                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Button, {
-                                            className: "deleteWatchlist",
-                                            variant: "danger",
-                                            onClick: ()=>{
-                                                this.removeFromWatchlist(movie_id);
-                                            }
-                                        }, void 0, false, {
-                                            fileName: "src/components/profile-view/profile-view.jsx",
-                                            lineNumber: 198,
-                                            columnNumber: 33
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/profile-view/profile-view.jsx",
-                                    lineNumber: 196,
-                                    columnNumber: 29
-                                }, this)
-                            }, movie._id, false, {
+                    children: watchlistMovies.length && watchlistMovies.map((movie)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Col, {
+                            sm: 6,
+                            md: 4,
+                            lg: 4,
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                className: "watchlistDiv",
+                                children: [
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_movieCard.MovieCard, {
+                                        movie: movie
+                                    }, void 0, false, {
+                                        fileName: "src/components/profile-view/profile-view.jsx",
+                                        lineNumber: 197,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Button, {
+                                        className: "deleteWatchlist",
+                                        variant: "danger",
+                                        onClick: ()=>{
+                                            this.removeFromWatchlist(movie_id);
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "src/components/profile-view/profile-view.jsx",
+                                        lineNumber: 198,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/components/profile-view/profile-view.jsx",
-                                lineNumber: 195,
+                                lineNumber: 196,
                                 columnNumber: 25
                             }, this)
-                        ),
-                        ";"
-                    ]
-                }, void 0, true, {
+                        }, movie._id, false, {
+                            fileName: "src/components/profile-view/profile-view.jsx",
+                            lineNumber: 195,
+                            columnNumber: 25
+                        }, this)
+                    )
+                }, void 0, false, {
                     fileName: "src/components/profile-view/profile-view.jsx",
                     lineNumber: 192,
                     columnNumber: 13
