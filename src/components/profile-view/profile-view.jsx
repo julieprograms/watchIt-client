@@ -78,7 +78,7 @@ export class ProfileView extends React.Component {
             headers: { Authorization: `Bearer ${token}` }
         })
         .then(() => {
-            Alert('Movie has been removed');
+            alert('Movie has been removed');
             this.componentDidMount();
         })
         .catch(function (error) {
@@ -91,9 +91,9 @@ export class ProfileView extends React.Component {
         e.preventDefault();
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');
-        let validated = this.validate();
+       // let validated = this.validate();
 
-        if(validated) {
+  //      if(validated) {
             axios.put(`https://watchitmovieapp.herokuapp.com/users/${user}`, {
             Username: newUsername ? newUsername: this.state.Username,
             Password: newPassword ? newPassword: this.state.Password,
@@ -111,7 +111,7 @@ export class ProfileView extends React.Component {
         .catch(e => {
             console.log(e)
         });
-    }}
+    }
      
 
 
@@ -138,7 +138,7 @@ export class ProfileView extends React.Component {
     }
 }
 
-    validate() {
+  /*  validate() {
         const UsernameErr = {};
         const PasswordErr = {};
         const EmailErr = {};
@@ -173,7 +173,7 @@ export class ProfileView extends React.Component {
         BirthdayErr: BirthdayErr;
         return isReq;
 };
-        
+   */     
 
 render() {
     const {Watchlist} = this.state;
@@ -195,7 +195,7 @@ render() {
                         <Col sm={6} md={4} lg={4} key={movie._id}>
                         <div className="watchlistDiv">
                             <MovieCard movie={movie} />
-                            <Button className="deleteWatchlist" variant="danger" onClick={() => { this.removeFromWatchlist(movie_id) }} ></Button>
+                            <Button className="deleteWatchlist" variant="danger" onClick={() => { this.removeFromWatchlist(movie._id) }} ></Button>
                         </div>       
                         </Col>
                 ))
@@ -223,7 +223,7 @@ render() {
                                         type="text"
                                         name="Username"
                                         placeholder="New Username"
-                                        onChange={(e) => this.onUsernameChange(e.target.value)}
+                                        onChange={(e) => this.onUsernameChange(e)}
                                         required
                                     />
                                 </Form.Group>
@@ -234,7 +234,7 @@ render() {
                                         type="password"
                                         name="Password"
                                         placeholder="New Password"
-                                        onChange={(e) => this.onPasswordChange(e.target.value)}
+                                        onChange={(e) => this.onPasswordChange(e)}
                                         required
                                     />
                                 </Form.Group>
@@ -245,7 +245,7 @@ render() {
                                         type="email"
                                         name="Email"
                                         placeholder="Enter Email"
-                                        onChange={(e) => this.onEmailChange(e.target.value)}
+                                        onChange={(e) => this.onEmailChange(e)}
                                         required
                                     />
                                 </Form.Group>
@@ -255,7 +255,7 @@ render() {
                                     <Form.Control
                                         type="date"
                                         name="Birthday"
-                                        onChange={(e) => this.onBirthdayChange(e.target.value)}
+                                        onChange={(e) => this.onBirthdayChange(e)}
                                     />
                                 </Form.Group>
                                 <br />

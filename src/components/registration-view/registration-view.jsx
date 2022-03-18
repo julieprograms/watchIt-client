@@ -91,7 +91,7 @@ const handleSubmit = (e) => {
 
                         <Form.Group>
                         <Form.Label className="label-font-color mt-3 mb-1">Password</Form.Label>
-                        <Form.Control className="input-font" type="text" 
+                        <Form.Control className="input-font" type="password" 
                         value={password} 
                         onChange={e => setPassword(e.target.value)} 
                         required 

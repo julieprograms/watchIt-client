@@ -36234,7 +36234,7 @@ function RegistrationView(props) {
                                                 }, this),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Form.Control, {
                                                     className: "input-font",
-                                                    type: "text",
+                                                    type: "password",
                                                     value: password,
                                                     onChange: (e)=>setPassword(e.target.value)
                                                     ,
@@ -36839,7 +36839,7 @@ class ProfileView extends _reactDefault.default.Component {
                 Authorization: `Bearer ${token}`
             }
         }).then(()=>{
-            _reactBootstrap.Alert('Movie has been removed');
+            alert('Movie has been removed');
             this.componentDidMount();
         }).catch(function(error) {
             console.log(error);
@@ -36849,8 +36849,9 @@ class ProfileView extends _reactDefault.default.Component {
         e1.preventDefault();
         const token = localStorage.getItem('token');
         const user = localStorage.getItem('user');
-        let validated = this.validate();
-        if (validated) _axiosDefault.default.put(`https://watchitmovieapp.herokuapp.com/users/${user}`, {
+        // let validated = this.validate();
+        //      if(validated) {
+        _axiosDefault.default.put(`https://watchitmovieapp.herokuapp.com/users/${user}`, {
             Username: newUsername ? newUsername : this.state.Username,
             Password: newPassword ? newPassword : this.state.Password,
             Email: newEmail ? newEmail : this.state.Email,
@@ -36888,58 +36889,42 @@ class ProfileView extends _reactDefault.default.Component {
             });
         }
     };
-    validate() {
-        const UsernameErr = {
-        };
-        const PasswordErr = {
-        };
-        const EmailErr = {
-        };
-        const BirthdayErr = {
-        };
-        let isReq = true;
-        if (!username) {
-            setValues({
-                ...values,
-                usernameErr: 'Username required'
-            });
+    /*  validate() {
+        const UsernameErr = {};
+        const PasswordErr = {};
+        const EmailErr = {};
+        const BirthdayErr = {};
+
+        let isReq = true
+
+        if(!username) {
+            setValues({...values, usernameErr: 'Username required'});
             isReq = false;
-        } else if (username.length < 2) {
-            setValues({
-                ...values,
-                usernameErr: 'Username must contain at least 2 characters'
-            });
+        } else if (username.length < 2){
+            setValues({...values, usernameErr: 'Username must contain at least 2 characters'});
             isReq = false;
         }
-        if (!password) {
-            setValues({
-                ...values,
-                passwordErr: 'Password required'
-            });
+        if(!password){
+            setValues({...values, passwordErr: 'Password required'});
             isReq = false;
-        } else if (password.length < 6) {
-            setValues({
-                ...values,
-                passwordErr: 'Password must contain at least 6 characters'
-            });
+        } else if(password.length < 6){
+            setValues({...values, passwordErr: 'Password must contain at least 6 characters'});
             isReq = false;
         }
-        if (!email) {
-            setValues({
-                ...values,
-                emailErr: 'Email required'
-            });
-            isReq = false;
-        } else if (email.indexOf('@') === -1) {
-            setValues({
-                ...values,
-                emailErr: 'Email is invalid'
-            });
+        if(!email) {
+            setValues({...values, emailErr: 'Email required'});
+            isReq= false;
+        } else if(email.indexOf('@') === -1) {
+            setValues({...values, emailErr: 'Email is invalid'});
             isReq = false;
         }
+        UsernameErr: UsernameErr;
+        PasswordErr: PasswordErr;
+        EmailErr: EmailErr;
+        BirthdayErr: BirthdayErr;
         return isReq;
-    }
-    render() {
+};
+   */ render() {
         const { Watchlist  } = this.state;
         const { movies  } = this.props;
         const { UsernameErr , PasswordErr , EmailErr , BirthdayErr  } = this.state;
@@ -36984,7 +36969,7 @@ class ProfileView extends _reactDefault.default.Component {
                                         className: "deleteWatchlist",
                                         variant: "danger",
                                         onClick: ()=>{
-                                            this.removeFromWatchlist(movie_id);
+                                            this.removeFromWatchlist(movie._id);
                                         }
                                     }, void 0, false, {
                                         fileName: "src/components/profile-view/profile-view.jsx",
@@ -37034,7 +37019,7 @@ class ProfileView extends _reactDefault.default.Component {
                                     type: "text",
                                     name: "Username",
                                     placeholder: "New Username",
-                                    onChange: (e)=>this.onUsernameChange(e.target.value)
+                                    onChange: (e)=>this.onUsernameChange(e)
                                     ,
                                     required: true
                                 }, void 0, false, {
@@ -37061,7 +37046,7 @@ class ProfileView extends _reactDefault.default.Component {
                                     type: "password",
                                     name: "Password",
                                     placeholder: "New Password",
-                                    onChange: (e)=>this.onPasswordChange(e.target.value)
+                                    onChange: (e)=>this.onPasswordChange(e)
                                     ,
                                     required: true
                                 }, void 0, false, {
@@ -37088,7 +37073,7 @@ class ProfileView extends _reactDefault.default.Component {
                                     type: "email",
                                     name: "Email",
                                     placeholder: "Enter Email",
-                                    onChange: (e)=>this.onEmailChange(e.target.value)
+                                    onChange: (e)=>this.onEmailChange(e)
                                     ,
                                     required: true
                                 }, void 0, false, {
@@ -37114,7 +37099,7 @@ class ProfileView extends _reactDefault.default.Component {
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactBootstrap.Form.Control, {
                                     type: "date",
                                     name: "Birthday",
-                                    onChange: (e)=>this.onBirthdayChange(e.target.value)
+                                    onChange: (e)=>this.onBirthdayChange(e)
                                 }, void 0, false, {
                                     fileName: "src/components/profile-view/profile-view.jsx",
                                     lineNumber: 255,
