@@ -1,0 +1,166 @@
+.btn-primary {
+  background-color: #531300 !important;
+  color: white !important;
+  border-color: #531300 !important;
+}
+
+html {
+  height: 100%;
+  background-color: #0530581e !important;
+}
+
+.login-card {
+  border: 1px solid #ffee02 !important;
+  background-color: #fffffff1 !important;
+}
+
+.label-font-color {
+  color: #ff02566b !important;
+  font-size: 14px !important;
+}
+
+.input-font {
+  font-size: 14px !important;
+}
+
+.title-color {
+  color: #ff02566b !important;
+  font-weight: 400 !important;
+  margin-bottom: 10% !important;
+  font-size: 18px !important;
+  border-bottom: 1px solid #ffee02;
+}
+.btn-primary {
+  background-color: #531300 !important;
+  color: white !important;
+  border-color: #531300 !important;
+}
+
+html {
+  height: 100%;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  margin-top: 5%;
+}
+
+.title-color {
+  color: #ff02566b !important;
+  font-weight: 400 !important;
+  margin-bottom: 10% !important;
+  font-size: 18px !important;
+  border-bottom: 1px solid;
+}
+
+.login-card {
+  border: 1px solid #ff02566b !important;
+  background-color: #fffffff1 !important;
+  color: #0c4952ee !important;
+  font-size: 15px;
+}
+
+.label-font-color {
+  color: #ff02566b !important;
+  font-size: 14px !important;
+}
+
+.input-font {
+  font-size: 14px !important;
+}
+
+.btn-primary {
+  background-color: #1588cad5 !important;
+  color: white !important;
+  border-color: #1588cad5 !important;
+  width: 10em;
+}
+
+.btn-secondary {
+  width: 10em;
+  background-color: #4876915d !important;
+  border-color: #4876915d !important;
+  color: black !important;
+}
+.navbar {
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar-logo {
+  color: #fdcf01 !important;
+  font-family: "Knewave", cursive;
+}
+
+.nav-link {
+  color: #fdcf01 !important;
+  font-family: "Rubik", sans-serif;
+}
+
+
+html {
+  height: 100%;
+  background-color: rgba(107, 14, 65, 0.068) !important;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.border-main {
+  border: 1px solid white !important;
+}
+
+.card-border {
+  border-right: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+}
+
+.black-bg {
+  background-color: black !important;
+  color: #faf6e3 !important;
+}
+
+.card-footer {
+  background-color: #fcfbe310 !important;
+  border-top: none !important;
+  z-index: 1 !important;
+}
+
+#movie-card-img {
+  max-height: 200px;
+  position: relative !important;
+  display: inline-block !important;
+}
+
+#movie-card-text {
+  max-height: 200px;
+  font-size: 12px;
+  margin-top: 22% !important;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+}
+
+.card-header {
+  min-width: 100%;
+  margin-top: -17%;
+}
+
+#movie-card-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 4%;
+  padding-right: 3%;
+  background-color: rgba(0, 0, 0, 0.295) !important;
+  color: #fdcf01 !important;
+  font-size: 25px;
+  backdrop-filter: blur(10px);
+  padding-top: 1%;
+  padding-bottom: 50%;
+  font-family: "Knewave", cursive;
+}
+
+.movie-card-btn {
+  background-color: rgba(250, 211, 37, 0.959) !important;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+
+/*# sourceMappingURL=index.c1843862.css.map */
