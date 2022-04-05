@@ -36852,10 +36852,10 @@ class ProfileView extends _reactDefault.default.Component {
         // let validated = this.validate();
         //      if(validated) {
         _axiosDefault.default.put(`https://watchitmovieapp.herokuapp.com/users/${user}`, {
-            Username: newUsername ? newUsername : this.state.Username,
-            Password: newPassword ? newPassword : this.state.Password,
-            Email: newEmail ? newEmail : this.state.Email,
-            Birthday: newBirthday ? newBirthday : this.state.Birthday
+            Username: this.state.Username,
+            Password: this.state.Password,
+            Email: this.state.Email,
+            Birthday: this.state.Birthday
         }, {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -36863,7 +36863,7 @@ class ProfileView extends _reactDefault.default.Component {
         }).then((response)=>{
             const data = response.data;
             localStorage.setItem('user', data.Username);
-            _reactBootstrap.Alert('User information has been updated');
+            alert('User information has been updated');
             window.open('/', '_self');
         }).catch((e)=>{
             console.log(e);
@@ -36882,7 +36882,7 @@ class ProfileView extends _reactDefault.default.Component {
             }).then(()=>{
                 localStorage.removeItem('user');
                 localStorage.removeItem('token');
-                _reactBootstrap.Alert('Your account has been deleted');
+                alert('Your account has been deleted');
                 window.open('/', '_self');
             }).catch((e)=>{
                 console.log(e);
@@ -36970,7 +36970,8 @@ class ProfileView extends _reactDefault.default.Component {
                                         variant: "danger",
                                         onClick: ()=>{
                                             this.removeFromWatchlist(movie._id);
-                                        }
+                                        },
+                                        children: "Remove"
                                     }, void 0, false, {
                                         fileName: "src/components/profile-view/profile-view.jsx",
                                         lineNumber: 198,
