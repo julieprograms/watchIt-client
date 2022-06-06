@@ -1,0 +1,270 @@
+.navbar {
+  font-family: Rubik, sans-serif;
+}
+
+.navbar-logo {
+  font-family: Knewave, cursive;
+  color: #fdcf01 !important;
+}
+
+.nav-link {
+  font-family: Rubik, sans-serif;
+  color: #fdcf01 !important;
+}
+
+.login-card {
+  color: #afafaf;
+  margin-top: 50px;
+  background-color: #000000e3 !important;
+  border: 1px solid #dbdbdb !important;
+}
+
+.title-color {
+  border-bottom: 1px solid #ffffff2d;
+  font-family: Balsamiq Sans, cursive;
+  color: #f8f8e68f !important;
+  border: none !important;
+  margin-bottom: 8% !important;
+  margin-left: 24% !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.font-title {
+  margin: 1%;
+  color: #faf600 !important;
+  font-family: Knewave, cursive !important;
+  font-size: 26px !important;
+}
+
+.button-submit {
+  color: #ffffffe1;
+  margin-left: 30%;
+  font-family: Balsamiq Sans, cursive;
+  background-color: #ffe600 !important;
+  border: none !important;
+  margin-top: 2% !important;
+  padding: 2% !important;
+  font-size: 14px !important;
+}
+
+.button-second {
+  color: #000;
+  background-color: #ffffffe8;
+  margin-left: 30%;
+  font-family: Balsamiq Sans, cursive;
+  border: none !important;
+  margin-top: 2% !important;
+  padding: 2% !important;
+  font-size: 14px !important;
+}
+
+.login-link {
+  color: #e26906 !important;
+}
+
+.title-color {
+  border-bottom: 1px solid #c4c4c44d;
+  font-family: Balsamiq Sans, cursive;
+  color: #f8f8e68f !important;
+  border: none !important;
+  margin-bottom: 5% !important;
+  margin-left: 24% !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.register-card {
+  color: #afafaf;
+  margin-top: 50px;
+  font-family: Balsamiq Sans, cursive;
+  font-size: 12px;
+  background-color: #000000e3 !important;
+  border: 1px solid #dbdbdb !important;
+}
+
+.label-font-color {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #ebebebc9 !important;
+  font-size: 14px !important;
+}
+
+.input-font {
+  font-size: 14px !important;
+}
+
+.button-submit {
+  color: #ffffffe1;
+  margin-left: 30%;
+  font-family: Balsamiq Sans, cursive;
+  background-color: #ffe600 !important;
+  border: none !important;
+  margin-top: 2% !important;
+  padding: 2% !important;
+  font-size: 14px !important;
+}
+
+.to-login-text {
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 10%;
+  font-size: 14px;
+  color: #fffd6ee0 !important;
+  margin-right: 2% !important;
+  padding-top: 2% !important;
+}
+
+.font-title {
+  margin: 1%;
+  color: #faf600 !important;
+  font-family: Knewave, cursive !important;
+  font-size: 26px !important;
+}
+
+.link-to-login {
+  margin-left: 2%;
+  font-size: 26px;
+  color: #faf600 !important;
+  font-family: Knewave, cursive !important;
+}
+
+.movie-title {
+  font-family: Knewave, cursive;
+  color: #fdcf01 !important;
+}
+
+.movie-poster {
+  width: 500px !important;
+}
+
+.details-bg {
+  font-family: Balsamiq Sans, cursive;
+  color: #bbbab4 !important;
+}
+
+.fav-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Balsamiq Sans, cursive;
+  background-color: #fad325fa !important;
+  font-size: 12px !important;
+}
+
+.director-card-title {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #fdcf01 !important;
+  font-family: Knewave, cursive !important;
+  font-size: 23px !important;
+}
+
+.director-card {
+  margin-top: 100px !important;
+}
+
+.genre-card-title {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #fdcf01 !important;
+  font-family: Knewave, cursive !important;
+  font-size: 23px !important;
+}
+
+.genre-card {
+  margin-top: 100px !important;
+}
+
+.border-main {
+  border: 1px solid #181414e8 !important;
+}
+
+.black-bg {
+  color: #bbbab4 !important;
+  background-color: #000 !important;
+}
+
+.card-footer {
+  z-index: 1 !important;
+  background-color: #42414b1f !important;
+  border-top: none !important;
+}
+
+#movie-card-img {
+  max-height: 200px;
+  display: inline-block;
+  position: relative;
+  top: 0 !important;
+}
+
+#movie-card-text {
+  max-height: 200px;
+  font-family: Balsamiq Sans, cursive;
+  font-size: 12px;
+  position: relative;
+  margin-top: 22% !important;
+}
+
+.card-header {
+  min-width: 100%;
+  margin-top: -17%;
+}
+
+#movie-card-title {
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  background-color: #000000a6;
+  border-top: 1px solid #0000008e;
+  padding-top: 2%;
+  padding-left: 8%;
+  padding-right: 6%;
+  font-family: Knewave, cursive;
+  font-size: 23px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #fdcf01 !important;
+}
+
+.movie-card-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Balsamiq Sans, cursive;
+  background-color: #fad325fa !important;
+  font-size: 12px !important;
+}
+
+.profile-card-title {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #fdcf01 !important;
+  font-family: Knewave, cursive !important;
+  font-size: 23px !important;
+}
+
+.profile-header {
+  color: #fffcef25 !important;
+  margin-top: 60px !important;
+  margin-bottom: 30px !important;
+  font-size: 60px !important;
+}
+
+.btn-primary {
+  width: 10em;
+  color: #fff !important;
+  background-color: #ca5715d5 !important;
+  border-color: #ca5715d5 !important;
+}
+
+.btn-secondary {
+  width: 10em;
+  color: #ff5e00 !important;
+  background-color: #ca57154d !important;
+  border-color: #ca57154d !important;
+}
+
+.app-container, html {
+  background-color: #130e10e5 !important;
+}
+
+/*# sourceMappingURL=index.24987d7b.css.map */
