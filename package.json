@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/julieprograms/watchIt-client/issues"
   },
-  "homepage": "https://github.com/julieprograms/watchIt-client#readme",
+  "homepage": "https://https://julieprograms.github.io/watchIt-client",
   "dependencies": {
     "axios": "^0.24.0",
     "parcel": "^2.2.0",
